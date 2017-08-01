@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <!-- The following application demonstrates the HTML5 JavaScript Web Dashboard.  -->
+    <!-- To learn how to create the current application, see https://www.devexpress.com/Support/Center/Question/Details/T532254/. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>HTML5 JavaScript Web Dashboard Application | DevExpress</title>
+    <link rel="icon" type="image/png" href="icons/favicon.ico" />
+
+    <link href="styles/dx.dashboard-control.bundle.css" rel="stylesheet" />
+    <script src="scripts/dx.dashboard-control.third-party.min.js"></script>
+    <script src="scripts/dx.dashboard-control.bundle.min.js"></script>
+
+    <link href="styles/styles.css" rel="stylesheet" />
+    <script src="scripts/scripts.js"></script>
+    
+    <script>
+        window.onload = function() {
+            showDemoPopup();
+
+
+            // Adds required HTML resources to the DOM.
+            DevExpress.Dashboard.ResourceManager.embedBundledResources();
+
+            // Creates a new Web Dashboard control with specified settings.
+            var dashboardControl = new DevExpress.Dashboard.DashboardControl(document.getElementById("container"), {
+                // Configures an URL where the Web Dashboard's server-side is hosted.
+                endpoint: "https://demos.devexpress.com/services/dashboard/api",
+                workingMode: "Viewer",
+                extensions: {
+                    "dashboard-panel": (control) => new DevExpress.Dashboard.DashboardPanelExtension(control)
+                }
+            });
+
+            // Renders the created dashboard.
+            dashboardControl.render();
+        }
+    </script>
+</head>
+<body>
+    <div id="container" style="position: absolute; top: 0;left: 0; bottom: 0; right: 0;">
+    </div>
+    <div id="demoInfoPopup">
+        <div class="closeButton">
+            <img src="icons/close-button.svg" onclick="hideDemoPopup()" />
+        </div>
+        <div class="dx-dashboard-typography">
+            <h1>DevExpress Dashboard</h1>
+            <p class="description">The following application demonstrates the DevExpress HTML5 JavaScript Web Dashboard that combines the JavaScript client-side with the ASP.NET MVC / Web API server-side.</p>
+            
+            <p>Getting Started with the current approach:<br><a href="https://www.devexpress.com/Support/Center/Question/Details/T532254" target="_blank">https://www.devexpress.com/Support/Center/Question/Details/T532254</a></p>
+            <p>DevExpress Dashboard documentation:<br><a href="https://documentation.devexpress.com/Dashboard/12049/Dashboard" target="_blank">https://documentation.devexpress.com/Dashboard/12049/Dashboard</a></p>
+            <p>Source Code:<br><a href="https://github.com/DevExpress/web-dashboard-demo/" target="_blank">https://github.com/DevExpress/web-dashboard-demo</a></p>
+        </div>
+        <div class="logo">
+            <a href="https://www.devexpress.com" target="_blank">
+                <img src="icons/devexpress-logo.svg" />
+            </a>
+        </div>
+    </div>
+</body>
+</html>
