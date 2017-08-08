@@ -1,6 +1,6 @@
-# Html5 Javascript Web Dashboard Application
+# Html5 JavaScript Web Dashboard Application
 
-The following application demonstrates the DevExpress HTML5 JavaScript Web Dashboard. The JavaScript client-side hosts on the [GitHub Pages](https://pages.github.com), while the ASP.NET MVC / Web API server-side hosts at [DevExpress.com](https://www.devexpress.com).
+The following application demonstrates the DevExpress [HTML5 JavaScript Web Dashboard]((https://www.devexpress.com/Support/Center/Question/Details/T532254)). The JavaScript client side is hosted on the [GitHub Pages](https://pages.github.com), while the ASP.NET MVC / Web API server side - on [DevExpress.com](https://www.devexpress.com).
 
 **See in action:**
 
@@ -10,17 +10,20 @@ https://devexpress.github.io/web-dashboard-demo/
 
 
 ## Benefits of This Approach
- 
+
 The Web Dashboard can now be easily rendered on the client-side, while having data fed to it by an ASP.NET MVC / Web API back-end. This means you can:
 
 - Integrate a dashboard into any place that supports HTTP requests (e.g., see the [GitHub Pages Demo](https://devexpress.github.io/web-dashboard-demo/)).
 - Publish Web Dashboard as a part of applications based on Angular, Knockout, Vue and similar frameworks.
-- Use the Dasbhoard side-by-side with [DevExtreme](https://js.devexpress.com) client-side widgets to create highly responsive web apps.
+- Use the Dashboard side-by-side with [DevExtreme](https://js.devexpress.com) client-side widgets to create highly responsive web apps.
 
 
 ## Server-Side Configuration
 
-The server-side of this project hosts on the **DevExpress.com**. See the [Getting Started](https://documentation.devexpress.com/Dashboard/12136/Getting-Started) section of the [DevExpress Dashboard Documentation](https://documentation.devexpress.com/Dashboard/12049/Dashboard) to learn how to create the Web Dashboard application.
+The server-side of this project is hosted on the **DevExpress.com**. See the [Getting Started](https://documentation.devexpress.com/Dashboard/12136/Getting-Started) section of the [DevExpress Dashboard Documentation](https://documentation.devexpress.com/Dashboard/12049/Dashboard) to learn how to create the Web Dashboard application:
+
+- [Creating an ASP.NET Designer and Using It to Create a Dashboard](https://documentation.devexpress.com/Dashboard/115782/Getting-Started/Creating-an-ASP-NET-Designer-and-Using-It-to-Create-a-Dashboard)
+- [Creating an ASP.NET MVC Dashboard Designer Application](https://documentation.devexpress.com/Dashboard/116313/Getting-Started/Creating-an-ASP-NET-MVC-Dashboard-Designer-Application)
 
 ## Client-Side Configuration
 
@@ -44,7 +47,7 @@ The **index.html** file contains the client-side configuration and consists of t
 </body>
 ```
   
-3. A script inside the `<head>` section that launches the Web Dashboard control on the client side:
+3. A script inside the `<head>` section that configures the Web Dashboard control on the client side:
 ```html
 <head>
     <!-- ...-->
@@ -76,7 +79,7 @@ To get more details about the Web Dashboard server-side and client-side configur
 
 ## License
 
-This extension is distributed under the **MIT** license (free and open-source), but can only be used with a commercial DevExpress Dashboard software product. You can [review the license terms](https://www.devexpress.com/Support/EULAs/NetComponents.xml) or [download a free trial version](https://go.devexpress.com/DevExpressDownload_UniversalTrial.aspx) of the Dashboard suite at [DevExpress.com](https://www.devexpress.com).
+These files are distributed under the **MIT** license (free and open-source), but can only be used with a commercial DevExpress Dashboard software product. You can [review the license terms](https://www.devexpress.com/Support/EULAs/NetComponents.xml) or [download a free trial version](https://go.devexpress.com/DevExpressDownload_UniversalTrial.aspx) of the Dashboard suite at [DevExpress.com](https://www.devexpress.com).
 
 ## Get More Information
 
