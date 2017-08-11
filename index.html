@@ -29,7 +29,7 @@
                 endpoint: "https://demos.devexpress.com/services/dashboard/api",
                 workingMode: "Viewer",
                 extensions: {
-                    "dashboard-panel": (control) => new DevExpress.Dashboard.DashboardPanelExtension(control)
+                    "dashboard-panel": function(control) { return new DevExpress.Dashboard.DashboardPanelExtension(control); }
                 }
             });
 
