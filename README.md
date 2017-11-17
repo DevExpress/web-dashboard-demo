@@ -22,8 +22,8 @@ The Web Dashboard can now be easily rendered on the client-side, while having da
 
 The server-side of this project is hosted on the **DevExpress.com**. See the [Getting Started](https://documentation.devexpress.com/Dashboard/12136/Getting-Started) section of the [DevExpress Dashboard Documentation](https://documentation.devexpress.com/Dashboard/12049/Dashboard) to learn how to create the Web Dashboard application:
 
-- [Creating an ASP.NET Designer and Using It to Create a Dashboard](https://documentation.devexpress.com/Dashboard/115782/Getting-Started/Creating-an-ASP-NET-Designer-and-Using-It-to-Create-a-Dashboard)
-- [Creating an ASP.NET MVC Dashboard Designer Application](https://documentation.devexpress.com/Dashboard/116313/Getting-Started/Creating-an-ASP-NET-MVC-Dashboard-Designer-Application)
+- [Create an ASP.NET Designer](https://documentation.devexpress.com/Dashboard/115782/Getting-Started/Creating-an-ASP-NET-Designer-and-Using-It-to-Create-a-Dashboard)
+- [Create an ASP.NET MVC Designer](https://documentation.devexpress.com/Dashboard/116313/Getting-Started/Creating-an-ASP-NET-MVC-Dashboard-Designer-Application)
 
 ## Client-Side Configuration
 
@@ -33,9 +33,9 @@ The **index.html** file contains the client-side configuration and consists of t
 ```html
 <head>
     <!-- ... -->
-    <link href="/Content/dx.dashboard-control.bundle.css" rel="stylesheet" />
-    <script src="/Content/dx.dashboard-control.third-party.min.js"></script>
-    <script src="/Content/dx.dashboard-control.bundle.min.js"></script>
+    <link href="styles/dx.dashboard-control.bundle.light.css" rel="stylesheet" />
+    <script src="scripts/dx.dashboard-control.third-party.min.js"></script>
+    <script src="scripts/dx.dashboard-control.bundle.min.js"></script>
 </head>
 ```
 
@@ -75,7 +75,7 @@ The **index.html** file contains the client-side configuration and consists of t
 </head>
 ```
 
-To get more details about the Web Dashboard server-side and client-side configuration, refer to this KB article: [How to create the HTML5 JavaScript Web Dashboard application (CTP)](https://www.devexpress.com/Support/Center/Question/Details/T532254)
+To get more details about the Web Dashboard server-side and client-side configuration, refer to [Create an HTML5 JavaScript Designer](https://documentation.devexpress.com/Dashboard/119109/Create-an-HTML5-JavaScript-Designer).
 
 ## License
 
