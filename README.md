@@ -6,7 +6,8 @@ The following application demonstrates the DevExpress [HTML5 JavaScript Web Dash
 
 https://devexpress.github.io/web-dashboard-demo/
 
-![html5-dashboard-demo](https://user-images.githubusercontent.com/17986517/28882487-0b67b5a4-77b4-11e7-9903-3545b7efc590.png)
+![html5-dashboard-demo](https://user-images.githubusercontent.com/17986517/35871357-13796742-0b75-11e8-9b12-a90de4813b96.png)
+
 
 
 ## Benefits of This Approach
