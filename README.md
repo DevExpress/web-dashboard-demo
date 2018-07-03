@@ -21,10 +21,10 @@ The Web Dashboard can now be easily rendered on the client-side, while having da
 
 ## Server-Side Configuration
 
-The server-side of this project is hosted on the **DevExpress.com**. See the [Getting Started](https://documentation.devexpress.com/Dashboard/12136/Getting-Started) section of the [DevExpress Dashboard Documentation](https://documentation.devexpress.com/Dashboard/12049/Dashboard) to learn how to create the Web Dashboard application:
+The server-side of this project is hosted on the **DevExpress.com**. See the [Getting Started](https://docs.devexpress.com/Dashboard/12136/Getting-Started) section of the [DevExpress Dashboard Documentation](https://docs.devexpress.com/Dashboard/12049/Dashboard) to learn how to create the Web Dashboard application:
 
-- [Create an ASP.NET Designer](https://documentation.devexpress.com/Dashboard/115782/Getting-Started/Creating-an-ASP-NET-Designer-and-Using-It-to-Create-a-Dashboard)
-- [Create an ASP.NET MVC Designer](https://documentation.devexpress.com/Dashboard/116313/Getting-Started/Creating-an-ASP-NET-MVC-Dashboard-Designer-Application)
+- [Create an ASP.NET MVC Designer](https://docs.devexpress.com/Dashboard/116313/Getting-Started/Creating-an-ASP-NET-MVC-Dashboard-Designer-Application)
+- [Create an ASP.NET Core Designer](https://docs.devexpress.com/Dashboard/119284/getting-started/build-end-user-dashboard-designer-applications/create-an-asp.net-core-designer)
 
 ## Client-Side Configuration
 
@@ -40,7 +40,7 @@ The **index.html** file contains the client-side configuration and consists of t
 </head>
 ```
 
-2. A `<div>` element with the specified Web Dashboard ID and position inside the `<body>` section:
+2. A `<div>` element with the specified Web Dashboard ID and position inside the `<body>` section. The control is rendered inside this div element.
 ```html
 <body>
    <div id="container" style="position: absolute; left: 0; right: 0; top: 0; bottom: 0">
@@ -48,7 +48,8 @@ The **index.html** file contains the client-side configuration and consists of t
 </body>
 ```
   
-3. A script inside the `<head>` section that configures the Web Dashboard control on the client side:
+3. A script inside the `<head>` section. The script contains the Web Dashboard control settings.
+
 ```html
 <head>
     <!-- ...-->
@@ -76,7 +77,7 @@ The **index.html** file contains the client-side configuration and consists of t
 </head>
 ```
 
-To get more details about the Web Dashboard server-side and client-side configuration, refer to [Create an HTML5 JavaScript Designer](https://documentation.devexpress.com/Dashboard/119109/Create-an-HTML5-JavaScript-Designer).
+To get more details about the Web Dashboard server-side and client-side configuration, refer to [HTML5 JavaScript Dashboard Control](https://docs.devexpress.com/Dashboard/119108/building-the-designer-and-viewer-applications/web-dashboard/html5-javascript-dashboard-control).
 
 ## License
 
@@ -84,6 +85,6 @@ These files are distributed under the **MIT** license (free and open-source), bu
 
 ## Get More Information
 
-- [Getting Started with the current approach](https://www.devexpress.com/Support/Center/Question/Details/T532254)
+- [Getting Started with the current approach](https://docs.devexpress.com/Dashboard/119109/getting-started/build-end-user-dashboard-designer-applications/create-an-html5-javascript-designer)
 - [DevExpress Blog post](https://community.devexpress.com/blogs/news/archive/2017/08/02/ctp-client-side-web-dashboard-integrated-with-angular-knockout-vue-and-more.aspx)
-- [DevExpress Dashboard documentation](https://documentation.devexpress.com/Dashboard/12049/Dashboard)
+- [DevExpress Dashboard documentation](https://docs.devexpress.com/Dashboard/12049/Dashboard)
