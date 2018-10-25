@@ -1,0 +1,9 @@
+{
+    "name": "DXWebApplication1",
+    "version": "1.0.0",
+    "private": true,
+    "dependencies": {
+        "devexpress-dashboard": "18.2.2-pre-beta",
+        "jquery-ui-dist": "^1.12.1"
+    }
+}
