@@ -1,0 +1,198 @@
+/**
+* DevExpress HTML/JS Analytics Core (dx-analytics.light.css)
+* Version: 18.2.2-pre-beta
+* Build date: 2018-10-22
+* Copyright (c) 2012 - 2018 Developer Express Inc. ALL RIGHTS RESERVED
+* License: https://www.devexpress.com/Support/EULAs/NetComponents.xml
+*/
+
+/* Borders -------------------------*/
+.dxd-border-primary {
+  border-color: #e6e6e6;
+}
+.dxd-border-secondary {
+  border-color: #dddddd;
+}
+.dxd-border-accented {
+  border-color: #337ab7;
+}
+/* Icons -------------------------*/
+.dxd-icon-fill {
+  fill: #606060;
+}
+.dxd-back-contrast .dxd-icon-fill {
+  fill: #aaaaaa;
+}
+.dxd-state-active .dxd-icon-fill {
+  fill: #ffffff;
+}
+/* Text -------------------------*/
+.dxd-text-primary {
+  color: #333333;
+}
+.dxd-text-info {
+  color: #525252;
+}
+.dxd-text-accented {
+  color: #337ab7;
+}
+.dxd-state-active .dxd-text-primary {
+  color: #ffffff;
+}
+/* Background -------------------------*/
+.dxd-back-primary {
+  background-color: #f5f5f5;
+}
+.dxd-back-primary2 {
+  background-color: #ffffff;
+}
+.dxd-back-secondary {
+  background-color: #e6e6e6;
+}
+.dxd-back-highlighted.dxd-state-normal:hover:not(.dxd-state-no-hover) {
+  background-color: #dddddd;
+}
+.dxd-back-highlighted:hover:not(.dxd-state-no-hover) {
+  background-color: #f5f5f5;
+}
+.dxd-back-highlighted.dxd-state-selected,
+.dxd-back-highlighted.dxd-state-selected:hover {
+  background-color: #dddddd;
+}
+.dxd-back-highlighted.dxd-state-active {
+  background-color: #aaaaaa;
+}
+.dxd-back-highlighted.dxd-state-active:hover:not(.dxd-state-no-hover) {
+  background-color: #606060;
+}
+.dxd-back-contrast {
+  background-color: #606060;
+}
+.dxd-back-contrast .dxd-back-highlighted:hover,
+.dxd-back-contrast .dxd-back-highlighted.dxd-state-active {
+  background-color: #525252;
+}
+.dxd-back-accented {
+  background-color: #337ab7;
+}
+/* Customization -------------------------*/
+.dx-designer .dxd-scrollbar-color {
+  scrollbar-face-color: #e6e6e6;
+  scrollbar-track-color: #aaaaaa;
+  scrollbar-arrow-color: #606060;
+  -ms-scrollbar-face-color: #e6e6e6;
+  -ms-scrollbar-track-color: #aaaaaa;
+  -ms-scrollbar-arrow-color: #606060;
+}
+.dx-designer .dxd-scrollbar-color ::-webkit-scrollbar-corner {
+  background-color: #e6e6e6;
+}
+.dx-designer .dxd-scrollbar-color ::-webkit-scrollbar {
+  background-color: #e6e6e6;
+}
+.dx-designer .dxd-scrollbar-color ::-webkit-scrollbar-thumb {
+  background-color: #aaaaaa;
+}
+/* FilterEditor -------------------------*/
+.dx-filtereditor .dxd-filter-editor-group-back-color {
+  background-color: rgba(217, 83, 79, 0.3);
+}
+.dx-filtereditor .dxd-filter-editor-group-back-color:hover {
+  background-color: rgba(217, 83, 79, 0.5);
+}
+.dx-filtereditor .dxd-filter-editor-group-back-color.dxd-state-selected {
+  background-color: #d9534f;
+}
+.dx-filtereditor .dxd-filter-editor-field-back-color {
+  background-color: rgba(51, 122, 183, 0.3);
+}
+.dx-filtereditor .dxd-filter-editor-field-back-color:hover {
+  background-color: rgba(51, 122, 183, 0.5);
+}
+.dx-filtereditor .dxd-filter-editor-field-back-color.dxd-state-selected {
+  background-color: #337ab7;
+}
+.dx-filtereditor .dxd-filter-editor-parameter-back-color {
+  background-color: rgba(240, 173, 78, 0.3);
+}
+.dx-filtereditor .dxd-filter-editor-parameter-back-color:hover {
+  background-color: rgba(240, 173, 78, 0.5);
+}
+.dx-filtereditor .dxd-filter-editor-parameter-back-color.dxd-state-selected {
+  background-color: #f0ad4e;
+}
+.dx-filtereditor .dxd-filter-editor-operator-back-color {
+  background-color: rgba(92, 184, 92, 0.3);
+}
+.dx-filtereditor .dxd-filter-editor-operator-back-color:hover {
+  background-color: rgba(92, 184, 92, 0.5);
+}
+.dx-filtereditor .dxd-filter-editor-operator-back-color.dxd-state-selected {
+  background-color: #5cb85c;
+}
+.dx-filtereditor .dxd-filter-editor-value-back-color {
+  background-color: rgba(221, 221, 221, 0.5);
+}
+.dx-filtereditor .dxd-filter-editor-value-back-color:hover {
+  background-color: rgba(221, 221, 221, 0.5);
+}
+.dx-filtereditor .dxd-filter-editor-text-color {
+  color: #333333;
+}
+.dx-filtereditor .dxd-filter-editor-text-color.dxd-state-selected {
+  color: #ffffff;
+}
+.dx-filtereditor .dxd-state-selected .dxd-filter-editor-text-color {
+  color: #ffffff;
+}
+.dx-filtereditor .dxd-filter-editor-add-icon-fill-color {
+  fill: #5cb85c;
+}
+.dx-filtereditor .dxd-filter-editor-remove-icon-fill-color {
+  fill: #d9534f;
+}
+/* QueryBuilder -------------------------*/
+.dx-querybuilder .dxd-qb-relationship-line-color {
+  stroke: #aaaaaa;
+}
+.dx-querybuilder .dxdd-connector.dxd-state-selected .dxd-qb-relationship-line-color {
+  stroke: #337ab7;
+}
+/* Wizard -------------------------*/
+/* AceEditor -------------------------*/
+.dxrd-scripts-editor.ace_editor,
+.dx-sql_editor.ace_editor,
+.dx-expressioneditor-textarea.ace_editor,
+.dx-filtereditor-ace.ace_editor {
+  background-color: #ffffff;
+}
+.dxrd-scripts-editor.ace_editor .ace_gutter,
+.dx-sql_editor.ace_editor .ace_gutter,
+.dx-expressioneditor-textarea.ace_editor .ace_gutter,
+.dx-filtereditor-ace.ace_editor .ace_gutter {
+  background-color: #f5f5f5;
+  color: #333333;
+  border-color: #e6e6e6;
+}
+/* DevExtreme -------------------------*/
+.dxrd-navigation-panel-wrapper .dx-tab {
+  background-color: #ffffff;
+  border-color: #aaaaaa;
+  color: #333333;
+}
+.dxrd-navigation-panel-wrapper .dx-tab:hover {
+  background-color: #f5f5f5;
+}
+.dxrd-navigation-panel-wrapper .dx-icon {
+  color: #525252;
+}
+.dxrd-navigation-panel-wrapper .dx-tab.dx-tab-selected {
+  color: #ffffff;
+}
+.dxrd-navigation-panel-wrapper .dx-tab.dx-tab-selected,
+.dxrd-navigation-panel-wrapper .dx-tab.dx-tab-selected:hover {
+  background-color: #aaaaaa;
+}
+.dxrd-navigation-panel-wrapper .dx-tab.dx-tab-selected .dx-icon {
+  color: #ffffff;
+}
