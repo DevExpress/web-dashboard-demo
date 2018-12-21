@@ -1,12 +1,12 @@
-# Html5 JavaScript Web Dashboard Application
+# Html JavaScript Web Dashboard Application
 
-The following application demonstrates the DevExpress [HTML5 JavaScript Web Dashboard]((https://www.devexpress.com/Support/Center/Question/Details/T532254)). The JavaScript client side is hosted on the [GitHub Pages](https://pages.github.com), while the ASP.NET MVC / Web API server side - on [DevExpress.com](https://www.devexpress.com).
+The following application demonstrates the DevExpress [HTML JavaScript Web Dashboard]((https://www.devexpress.com/Support/Center/Question/Details/T532254)). The JavaScript client side is hosted on the [GitHub Pages](https://pages.github.com), while the ASP.NET MVC / Web API server side - on [DevExpress.com](https://www.devexpress.com).
 
 **See in action:**
 
 https://devexpress.github.io/web-dashboard-demo/
 
-![html5-dashboard-demo](https://user-images.githubusercontent.com/17986517/35871357-13796742-0b75-11e8-9b12-a90de4813b96.png)
+![html-dashboard-demo](https://user-images.githubusercontent.com/17986517/35871357-13796742-0b75-11e8-9b12-a90de4813b96.png)
 
 
 
@@ -77,7 +77,7 @@ The **index.html** file contains the client-side configuration and consists of t
 </head>
 ```
 
-To get more details about the Web Dashboard server-side and client-side configuration, refer to [HTML5 JavaScript Dashboard Control](https://docs.devexpress.com/Dashboard/119108/building-the-designer-and-viewer-applications/web-dashboard/html5-javascript-dashboard-control).
+To get more details about the Web Dashboard server-side and client-side configuration, refer to [HTML JavaScript Dashboard Control](https://docs.devexpress.com/Dashboard/119108/building-the-designer-and-viewer-applications/web-dashboard/html-javascript-dashboard-control).
 
 ## License
 
@@ -85,6 +85,7 @@ These files are distributed under the **MIT** license (free and open-source), bu
 
 ## Get More Information
 
-- [Getting Started with the current approach](https://docs.devexpress.com/Dashboard/119109/getting-started/build-end-user-dashboard-designer-applications/create-an-html5-javascript-designer)
+- [Getting Started with the current approach](https://docs.devexpress.com/Dashboard/119109/getting-started/build-web-dashboard-applications/create-an-html-javascript-dashboard-application-global-namespaces)
+- [Getting Started with the modular approach](https://docs.devexpress.com/Dashboard/400322/getting-started/build-web-dashboard-applications/create-an-html-javascript-dashboard-application-modular-approach)
 - [DevExpress Blog post](https://community.devexpress.com/blogs/news/archive/2017/08/02/ctp-client-side-web-dashboard-integrated-with-angular-knockout-vue-and-more.aspx)
 - [DevExpress Dashboard documentation](https://docs.devexpress.com/Dashboard/12049/Dashboard)
