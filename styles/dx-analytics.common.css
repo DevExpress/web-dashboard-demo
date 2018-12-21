@@ -1,7 +1,7 @@
 /**
 * DevExpress HTML/JS Analytics Core (dx-analytics.common.css)
-* Version: 18.2.2-pre-beta
-* Build date: 2018-10-22
+* Version: 18.2.3
+* Build date: 2018-12-14
 * Copyright (c) 2012 - 2018 Developer Express Inc. ALL RIGHTS RESERVED
 * License: https://www.devexpress.com/Support/EULAs/NetComponents.xml
 */
@@ -724,7 +724,8 @@
   max-width: 727px;
 }
 .dx-expressioneditor .dx-overlay-content .dx-popup-content {
-  border: none;
+  border-width: 0px;
+  border-style: none;
   padding: 0;
 }
 .dx-expressioneditor .dx-expression-tree {
@@ -1766,32 +1767,6 @@
   padding-right: 6px;
   padding-left: 0;
 }
-.dx-designer .dx-treelist-wrapper .dx-scrollable-container {
-  max-height: 200px;
-  cursor: default;
-}
-.dx-designer .dxd-opacity-60 {
-  opacity: 0.6;
-  filter: alpha(opacity=60);
-}
-.dx-designer .dxd-opacity-80 {
-  opacity: 0.8;
-  filter: alpha(opacity=80);
-}
-.dx-designer .dx-border-inheritor {
-  border-width: 0;
-  stroke-width: 0;
-}
-.dx-designer .dx-background-inheritor {
-  display: inline;
-  font-size: 0;
-}
-.dx-designer .dxd-state-no-hover {
-  cursor: default;
-}
-.dx-designer .dx-fontsize-reestablished {
-  font-size: 14px;
-}
 .dx-designer .dx-property-grid-sorting-action.dxd-state-active .dxd-icon-fill,
 .dx-designer .dxrd-properties-grid-action-image:hover .dxd-icon-fill,
 .dx-designer .dx-font-style-button:hover .dxd-icon-fill,
@@ -2305,4 +2280,34 @@
   height: 20px;
   width: 20px;
   position: absolute;
+}
+.dx-designer-viewport .dx-treelist-wrapper .dx-scrollable-container {
+  max-height: 200px;
+  cursor: default;
+}
+.dx-designer-viewport .dxd-opacity-60 {
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+}
+.dx-designer-viewport .dxd-opacity-80 {
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+}
+.dx-designer-viewport .dx-border-inheritor {
+  border-width: 0;
+  stroke-width: 0;
+}
+.dx-designer-viewport .dx-background-inheritor {
+  display: inline;
+  font-size: 0;
+}
+.dx-designer-viewport .dxd-state-no-hover {
+  cursor: default;
+}
+.dx-designer-viewport .dx-fontsize-reestablished {
+  font-size: 14px;
+}
+.dx-designer-viewport .dx-default-border-style {
+  border-width: 1px;
+  border-style: solid;
 }

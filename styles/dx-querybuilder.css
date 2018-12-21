@@ -1,13 +1,14 @@
 /**
 * DevExpress HTML/JS Query Builder (dx-querybuilder.css)
-* Version: 18.2.2-pre-beta
-* Build date: 2018-10-22
+* Version: 18.2.3
+* Build date: 2018-12-14
 * Copyright (c) 2012 - 2018 Developer Express Inc. ALL RIGHTS RESERVED
 * License: https://www.devexpress.com/Support/EULAs/NetComponents.xml
 */
 
 .dxrd-control {
-  border: none;
+  border-width: 0px;
+  border-style: none;
   background: none;
   position: absolute;
   box-sizing: border-box;
@@ -23,8 +24,9 @@
   display: inline-block;
 }
 .dxdd-connecting-point {
+  border-width: 0px;
+  border-style: none;
   position: absolute;
-  border: none;
   background: none;
 }
 .dxdd-connecting-point:hover line {
@@ -57,7 +59,8 @@
   color: black;
 }
 .dxdd-connector {
-  border: none;
+  border-width: 0px;
+  border-style: none;
   background: none;
   position: absolute;
 }
@@ -68,6 +71,9 @@
   background: none;
   border: 1px solid blue;
   z-index: 1;
+}
+.dxdd-connector .dxdd-connection-line {
+  overflow: visible;
 }
 .dxrd-focused,
 .dxrd-selected {
@@ -562,7 +568,8 @@
 }
 .dx-querybuilder .dxrd-designer-wrapper .dxrd-surface-wrapper .dxqb-main .dxd-track-cursor.dxrd-selected .ui-resizable-handle,
 .dx-querybuilder .dxrd-designer-wrapper .dxrd-surface-wrapper .dxqb-main .dxd-track-cursor.dxrd-focused .ui-resizable-handle {
-  border: none;
+  border-width: 0px;
+  border-style: none;
   top: 0;
   margin-top: 0;
   height: 100%;
@@ -633,7 +640,8 @@
   stroke-width: 3px;
 }
 .dx-querybuilder .dxrd-designer-wrapper .dxrd-surface-wrapper .dxrd-selected.dxdd-connector .dxrd-control {
-  border: none;
+  border-width: 0px;
+  border-style: none;
 }
 .dxqb-preview {
   font-family: Helvetica, Arial, 'DejaVu Sans', 'Liberation Sans', Freesans, sans-serif;
@@ -658,7 +666,8 @@
 .dxqb-preview .dxqb-show-query-string-content .dxrd-show-query-string-editor {
   height: 100%;
   background: transparent;
-  border: none;
+  border-width: 0px;
+  border-style: none;
 }
 .dxqb-preview .dxqb-show-query-string-content .dxrd-show-query-string-editor textarea {
   background: transparent;
@@ -833,7 +842,8 @@
 }
 .dxrd-wizard .dxrd-wizard-content .dxrd-wizard-page .dx-list-item,
 .dxrd-wizard .dxrd-wizard-content .dxrd-wizard-page .dx-list .dx-empty-message {
-  border: none;
+  border-width: 0px;
+  border-style: none;
   margin-bottom: 1px;
 }
 .dxrd-wizard .dxrd-wizard-content .dxrd-wizard-page .dx-treelist-item {
@@ -841,8 +851,6 @@
   padding: 5px;
 }
 .dxrd-wizard .dxrd-wizard-content .dxrd-wizard-page .dxrd-wizard-list {
-  border-width: 1px;
-  border-style: solid;
   height: 286px;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -857,7 +865,7 @@
 .dxrd-multiqueries-sqldatasource-wizard.dxrd-wizard .dxrd-wizard-content .dxrd-wizard-page {
   padding: 0px;
 }
-.dxrd-multiqueries-sqldatasource-wizard.dxrd-wizard .dxrd-wizard-content .dxrd-wizard-page .dxrd-wizard-list,
+.dxrd-multiqueries-sqldatasource-wizard.dxrd-wizard .dxrd-wizard-content .dxrd-wizard-page .dx-default-border-style,
 .dxrd-multiqueries-sqldatasource-wizard.dxrd-wizard .dxrd-wizard-content .dxrd-wizard-page .dxrd-wizard-dataMember,
 .dxrd-multiqueries-sqldatasource-wizard.dxrd-wizard .dxrd-wizard-content .dxrd-wizard-page .dx-filtereditor {
   border-top: none;
@@ -867,7 +875,8 @@
   border-bottom-style: solid;
 }
 .dxrd-multiqueries-sqldatasource-wizard.dxrd-wizard .dxrd-wizard-content .dxrd-wizard-page .dx-filtereditor-tree {
-  border: none;
+  border-width: 0px;
+  border-style: none;
   padding-left: 20px;
 }
 .dxrd-multiqueries-sqldatasource-wizard.dxrd-wizard .dxrd-wizard-content .dxrd-wizard-page .dx-item-content.dx-list-item-content {
@@ -1000,7 +1009,8 @@
 }
 .dxrd-querybuilder-popup .dxrd-wizard-content .dxrd-wizard-page .dx-list-item,
 .dxrd-querybuilder-popup .dxrd-wizard-content .dxrd-wizard-page .dx-list .dx-empty-message {
-  border: none;
+  border-width: 0px;
+  border-style: none;
   margin-bottom: 1px;
 }
 .dxrd-querybuilder-popup .dxrd-wizard-content .dxrd-wizard-page .dx-treelist-item {
@@ -1008,8 +1018,6 @@
   padding: 5px;
 }
 .dxrd-querybuilder-popup .dxrd-wizard-content .dxrd-wizard-page .dxrd-wizard-list {
-  border-width: 1px;
-  border-style: solid;
   height: 286px;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -1024,7 +1032,7 @@
 .dxrd-multiqueries-sqldatasource-wizard.dxrd-querybuilder-popup .dxrd-wizard-content .dxrd-wizard-page {
   padding: 0px;
 }
-.dxrd-multiqueries-sqldatasource-wizard.dxrd-querybuilder-popup .dxrd-wizard-content .dxrd-wizard-page .dxrd-wizard-list,
+.dxrd-multiqueries-sqldatasource-wizard.dxrd-querybuilder-popup .dxrd-wizard-content .dxrd-wizard-page .dx-default-border-style,
 .dxrd-multiqueries-sqldatasource-wizard.dxrd-querybuilder-popup .dxrd-wizard-content .dxrd-wizard-page .dxrd-wizard-dataMember,
 .dxrd-multiqueries-sqldatasource-wizard.dxrd-querybuilder-popup .dxrd-wizard-content .dxrd-wizard-page .dx-filtereditor {
   border-top: none;
@@ -1034,7 +1042,8 @@
   border-bottom-style: solid;
 }
 .dxrd-multiqueries-sqldatasource-wizard.dxrd-querybuilder-popup .dxrd-wizard-content .dxrd-wizard-page .dx-filtereditor-tree {
-  border: none;
+  border-width: 0px;
+  border-style: none;
   padding-left: 20px;
 }
 .dxrd-multiqueries-sqldatasource-wizard.dxrd-querybuilder-popup .dxrd-wizard-content .dxrd-wizard-page .dx-item-content.dx-list-item-content {
