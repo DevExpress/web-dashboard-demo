@@ -3,7 +3,11 @@
     "version": "1.0.0",
     "private": true,
     "dependencies": {
-        "devexpress-dashboard": "18.2.6",
+        "devexpress-dashboard": "18.2.7",
         "jquery-ui-dist": "^1.12.1"
+    },
+    "devDependencies": {
+        "gulp": "4.0.0",
+        "gulp-connect": "^5.7.0"
     }
 }

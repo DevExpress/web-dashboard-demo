@@ -1,7 +1,7 @@
 /*!
 * DevExtreme
-* Version: 18.2.6
-* Build date: Feb 5, 2019
+* Version: 18.2.7
+* Build date: Mar 9, 2019
 *
 * Copyright (c) 2012 - 2019 Developer Express Inc. ALL RIGHTS RESERVED
 * Read about DevExtreme licensing here: https://js.devexpress.com/Licensing/
@@ -2061,6 +2061,11 @@
 .dx-datebox {
   max-width: 100%;
 }
+.dx-datebox .dx-texteditor-input::-webkit-datetime-edit {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
 .dx-datebox.dx-texteditor-empty input::-webkit-datetime-edit {
   color: transparent;
 }
@@ -4108,6 +4113,11 @@ input.dx-hidden {
   width: 30px;
   min-width: 30px;
   max-width: 30px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-touch-callout: none;
 }
 .dx-datagrid-content .dx-datagrid-table .dx-filter-range-content {
   padding: 7px 7px 7px 32px;
@@ -5266,6 +5276,11 @@ input.dx-hidden {
   width: 30px;
   min-width: 30px;
   max-width: 30px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-touch-callout: none;
 }
 .dx-treelist-content .dx-treelist-table .dx-filter-range-content {
   padding: 7px 7px 7px 32px;
@@ -6734,7 +6749,7 @@ input.dx-hidden {
 }
 .dx-rtl .dx-field-item-required-mark,
 .dx-rtl .dx-field-item-optional-mark {
-  float: left;
+  unicode-bidi: embed;
 }
 .dx-rtl .dx-field-item:not(.dx-first-col) {
   padding-left: 0;
@@ -6929,6 +6944,13 @@ input.dx-hidden {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+.dx-drawer-overlap .dx-drawer-panel-content {
+  overflow: visible;
+}
+.dx-drawer-overlap .dx-drawer-panel-content.dx-overlay-wrapper {
+  right: auto;
+  left: auto;
+}
 .dx-drawer-overlap.dx-drawer-left .dx-drawer-wrapper,
 .dx-drawer-overlap.dx-drawer-right .dx-drawer-wrapper {
   overflow-y: visible;
@@ -6939,11 +6961,6 @@ input.dx-hidden {
 }
 .dx-drawer-overlap.dx-drawer-right.dx-drawer-expand .dx-overlay-content {
   right: 0px;
-}
-.dx-overlay-wrapper.dx-drawer-panel-content {
-  overflow: visible;
-  right: auto;
-  left: auto;
 }
 .dx-card {
   overflow: hidden;
@@ -6958,6 +6975,7 @@ input.dx-hidden {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
+  border: 1px solid transparent;
 }
 .dx-quill-container {
   -webkit-box-sizing: border-box;
