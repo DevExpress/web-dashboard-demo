@@ -1,7 +1,7 @@
 /*!
 * DevExtreme
-* Version: 18.2.7
-* Build date: Mar 9, 2019
+* Version: 18.2.8
+* Build date: Apr 23, 2019
 *
 * Copyright (c) 2012 - 2019 Developer Express Inc. ALL RIGHTS RESERVED
 * Read about DevExtreme licensing here: https://js.devexpress.com/Licensing/
@@ -109,11 +109,7 @@
 }
 .dx-datagrid .dx-datagrid-rowsview .dx-virtual-row > td:not(.dx-datagrid-group-space):before {
   display: block;
-  position: absolute;
-  left: 7px;
-  right: 7px;
-  top: 0;
-  bottom: 0;
+  height: 100%;
   content: '';
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAACqCAYAAABbAOqQAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA39pVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTQyIDc5LjE2MDkyNCwgMjAxNy8wNy8xMy0wMTowNjozOSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpjYWQ2ODE5MS00ZDMxLWRjNGYtOTU0NC1jNjJkMTIxMjY2M2IiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MjY1RUVFQzAzRDYzMTFFODlFNThCOUJBQjU4Q0EzRDgiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MjY1RUVFQkYzRDYzMTFFODlFNThCOUJBQjU4Q0EzRDgiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjVlMjM1Y2U0LTc5ZWUtNGI0NC05ZjlkLTk2NTZmZGFjNjhhNCIgc3RSZWY6ZG9jdW1lbnRJRD0iYWRvYmU6ZG9jaWQ6cGhvdG9zaG9wOjk1OTQ2MjBiLTUyMTQtYTM0Yy04Nzc5LTEwMmEyMTY4MTlhOSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PvLbJKYAAADrSURBVHja7N3BDYBACABBsQn7L48q0BoMD5SZxAZuc74gF1V1MMfpCARBEEEQRBAEEQRBdovnuxxDq3RD/LIQRBAEQRBBEEQQBBEEQQQBAAAAAAAAABhi8gZVbgxi6kQQBBEEQQRBEEEQRBAEQRBBAAAAAAAAAAAabX2Daux2lqkTQRBEEAQRBEEEQRBBEARBBAEAAAAAAAAAaLR1g2osUyeCIIggCCIIggiCIIIgCIIIAgAAAAAAAADQ6KsbVPnXIKZOBEEQQRBEEAQRBEEEQRAEEYRXoqqcghuCIIIgiCAIIgiCCMIUtwADALYCCr92l++TAAAAAElFTkSuQmCC);
   background-repeat: no-repeat repeat;
@@ -199,6 +195,7 @@
 .dx-rtl .dx-datagrid .dx-datagrid-rowsview .dx-freespace-row td.dx-pointer-events-none,
 .dx-rtl .dx-datagrid .dx-datagrid-headers .dx-row td.dx-pointer-events-none {
   border-left: 2px solid #ddd;
+  border-right: 2px solid #ddd;
 }
 .dx-rtl .dx-datagrid .dx-datagrid-rowsview .dx-data-row td.dx-pointer-events-none.dx-first-cell,
 .dx-rtl .dx-datagrid .dx-datagrid-rowsview .dx-freespace-row td.dx-pointer-events-none.dx-first-cell,
@@ -864,6 +861,7 @@
   border-top-width: 0;
   border-left: 1px solid #ddd;
   border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
 }
 .dx-treelist .dx-column-lines > td:first-child {
   border-left: none;
@@ -935,11 +933,7 @@
 }
 .dx-treelist-container .dx-treelist-rowsview .dx-virtual-row > td:before {
   display: block;
-  position: absolute;
-  left: 7px;
-  right: 7px;
-  top: 0;
-  bottom: 0;
+  height: 100%;
   content: '';
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAACqCAYAAABbAOqQAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA39pVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTQyIDc5LjE2MDkyNCwgMjAxNy8wNy8xMy0wMTowNjozOSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpjYWQ2ODE5MS00ZDMxLWRjNGYtOTU0NC1jNjJkMTIxMjY2M2IiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MjY1RUVFQzAzRDYzMTFFODlFNThCOUJBQjU4Q0EzRDgiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MjY1RUVFQkYzRDYzMTFFODlFNThCOUJBQjU4Q0EzRDgiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjVlMjM1Y2U0LTc5ZWUtNGI0NC05ZjlkLTk2NTZmZGFjNjhhNCIgc3RSZWY6ZG9jdW1lbnRJRD0iYWRvYmU6ZG9jaWQ6cGhvdG9zaG9wOjk1OTQ2MjBiLTUyMTQtYTM0Yy04Nzc5LTEwMmEyMTY4MTlhOSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PvLbJKYAAADrSURBVHja7N3BDYBACABBsQn7L48q0BoMD5SZxAZuc74gF1V1MMfpCARBEEEQRBAEEQRBdovnuxxDq3RD/LIQRBAEQRBBEEQQBBEEQQQBAAAAAAAAABhi8gZVbgxi6kQQBBEEQQRBEEEQRBAEQRBBAAAAAAAAAAAabX2Daux2lqkTQRBEEAQRBEEEQRBBEARBBAEAAAAAAAAAaLR1g2osUyeCIIggCCIIggiCIIIgCIIIAgAAAAAAAADQ6KsbVPnXIKZOBEEQQRBEEAQRBEEEQRAEEYRXoqqcghuCIIIgiCAIIgiCCMIUtwADALYCCr92l++TAAAAAElFTkSuQmCC);
   background-repeat: no-repeat repeat;
@@ -1027,6 +1021,7 @@
 .dx-rtl .dx-treelist-container .dx-treelist-rowsview .dx-freespace-row td.dx-pointer-events-none,
 .dx-rtl .dx-treelist-container .dx-treelist-headers .dx-row td.dx-pointer-events-none {
   border-left: 2px solid #ddd;
+  border-right: 2px solid #ddd;
 }
 .dx-rtl .dx-treelist-container .dx-treelist-rowsview .dx-data-row td.dx-pointer-events-none.dx-first-cell,
 .dx-rtl .dx-treelist-container .dx-treelist-rowsview .dx-freespace-row td.dx-pointer-events-none.dx-first-cell,
@@ -3262,6 +3257,7 @@
 .dx-tab {
   padding: 9px;
   background-color: #f7f7f7;
+  color: #333;
 }
 .dx-tab .dx-icon {
   color: #333;
@@ -3346,9 +3342,14 @@
   padding: 0;
   border: none;
 }
+.dx-nav-item,
+.dx-rtl .dx-nav-item {
+  background: #f7f7f7;
+}
 .dx-nav-item .dx-tab-text,
 .dx-rtl .dx-nav-item .dx-tab-text {
   line-height: normal;
+  color: #333;
 }
 .dx-navbar .dx-nav-item .dx-icon,
 .dx-navbar .dx-rtl .dx-nav-item .dx-icon {
@@ -3360,6 +3361,7 @@
   font-size: 31px;
   text-align: center;
   line-height: 31px;
+  color: #333;
 }
 .dx-nav-item.dx-tab-selected:after,
 .dx-rtl .dx-nav-item.dx-tab-selected:after,
@@ -3372,6 +3374,12 @@
 .dx-nav-item.dx-tab-selected,
 .dx-rtl .dx-nav-item.dx-tab-selected {
   background: #fff;
+}
+.dx-nav-item.dx-tab-selected .dx-tab-text,
+.dx-rtl .dx-nav-item.dx-tab-selected .dx-tab-text,
+.dx-nav-item.dx-tab-selected .dx-icon,
+.dx-rtl .dx-nav-item.dx-tab-selected .dx-icon {
+  color: #333;
 }
 .dx-nav-item.dx-state-active,
 .dx-rtl .dx-nav-item.dx-state-active {
@@ -5621,37 +5629,12 @@
   right: auto;
   left: 38px;
 }
-.dx-lookup-validation-message {
-  font-size: 14px;
-  line-height: 14px;
-  padding: 13px 20px 12px;
-  margin-bottom: 20px;
-  margin-left: -20px;
-  border-bottom: 1px solid #ddd;
-  color: #d9534f;
-}
-.dx-rtl .dx-lookup-validation-message {
-  margin-right: -20px;
-  margin-left: 0;
-}
 .dx-lookup-popup-search .dx-list {
   height: calc(100% -  70px);
 }
 .dx-lookup-search-wrapper {
   padding: 20px;
   padding-bottom: 14px;
-}
-.dx-popup-content.dx-lookup-invalid {
-  padding-top: 0;
-}
-.dx-popup-content.dx-lookup-invalid .dx-lookup-validation-message {
-  display: inline-block;
-}
-.dx-popup-content.dx-lookup-invalid .dx-list {
-  top: 40px;
-}
-.dx-lookup-popup-search .dx-popup-content.dx-lookup-invalid .dx-list {
-  top: 110px;
 }
 .dx-actionsheet-container .dx-actionsheet-item {
   margin: 0 0 10px 0;
@@ -6952,7 +6935,8 @@
   text-align: center;
   line-height: 21px;
 }
-.dx-datagrid-rowsview {
+.dx-datagrid-borders .dx-datagrid-rowsview,
+.dx-datagrid-headers + .dx-datagrid-rowsview {
   border-top: 1px solid #ddd;
 }
 .dx-datagrid-rowsview .dx-row {
@@ -7983,7 +7967,8 @@
   text-align: center;
   line-height: 21px;
 }
-.dx-treelist-rowsview {
+.dx-treelist-borders .dx-treelist-rowsview,
+.dx-treelist-headers + .dx-treelist-rowsview {
   border-top: 1px solid #ddd;
 }
 .dx-treelist-rowsview .dx-row {
@@ -8364,7 +8349,7 @@
   background-color: #f5f5f5;
 }
 .dx-menu-item.dx-state-focused {
-  background-color: #337ab7;
+  background-color: #fff;
   color: #fff;
 }
 .dx-menu-item.dx-menu-item-has-text .dx-icon {
@@ -8375,7 +8360,7 @@
   color: #333;
 }
 .dx-menu-item-selected.dx-state-focused {
-  background-color: rgba(51, 122, 183, 0.7);
+  background-color: rgba(255, 255, 255, 0.7);
   color: #fff;
 }
 .dx-menu-item-expanded {

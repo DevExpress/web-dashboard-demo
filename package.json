@@ -3,7 +3,7 @@
     "version": "1.0.0",
     "private": true,
     "dependencies": {
-        "devexpress-dashboard": "18.2.7",
+        "devexpress-dashboard": "18.2.8",
         "jquery-ui-dist": "^1.12.1"
     },
     "devDependencies": {
