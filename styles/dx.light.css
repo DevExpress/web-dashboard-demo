@@ -1,7 +1,7 @@
 /*!
 * DevExtreme
-* Version: 19.1.4
-* Build date: Jun 17, 2019
+* Version: 19.1.5
+* Build date: Jul 30, 2019
 *
 * Copyright (c) 2012 - 2019 Developer Express Inc. ALL RIGHTS RESERVED
 * Read about DevExtreme licensing here: https://js.devexpress.com/Licensing/
@@ -13,13 +13,13 @@
 }
 .dx-colorview-hue-scale-handle {
   border: 1px solid rgba(0, 0, 0, 0.2);
-  -webkit-box-shadow: inset -5px 0px 0px 3px #fff, inset 5px 0px 0px 3px #fff, inset -6px 0px 1px 4px rgba(0, 0, 0, 0.2), inset 6px 0px 1px 4px rgba(0, 0, 0, 0.2);
-          box-shadow: inset -5px 0px 0px 3px #fff, inset 5px 0px 0px 3px #fff, inset -6px 0px 1px 4px rgba(0, 0, 0, 0.2), inset 6px 0px 1px 4px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: inset -5px 0 0 3px #fff, inset 5px 0 0 3px #fff, inset -6px 0 1px 4px rgba(0, 0, 0, 0.2), inset 6px 0 1px 4px rgba(0, 0, 0, 0.2);
+          box-shadow: inset -5px 0 0 3px #fff, inset 5px 0 0 3px #fff, inset -6px 0 1px 4px rgba(0, 0, 0, 0.2), inset 6px 0 1px 4px rgba(0, 0, 0, 0.2);
 }
 .dx-colorview-alpha-channel-handle {
   border: 1px solid rgba(0, 0, 0, 0.2);
-  -webkit-box-shadow: inset 0px -5px 0px 3px #fff, inset 0px 5px 0px 3px #fff, inset 0px -6px 1px 4px rgba(0, 0, 0, 0.2), inset 0px 6px 1px 4px rgba(0, 0, 0, 0.2);
-          box-shadow: inset 0px -5px 0px 3px #fff, inset 0px 5px 0px 3px #fff, inset 0px -6px 1px 4px rgba(0, 0, 0, 0.2), inset 0px 6px 1px 4px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: inset 0 -5px 0 3px #fff, inset 0 5px 0 3px #fff, inset 0 -6px 1px 4px rgba(0, 0, 0, 0.2), inset 0 6px 1px 4px rgba(0, 0, 0, 0.2);
+          box-shadow: inset 0 -5px 0 3px #fff, inset 0 5px 0 3px #fff, inset 0 -6px 1px 4px rgba(0, 0, 0, 0.2), inset 0 6px 1px 4px rgba(0, 0, 0, 0.2);
 }
 .dx-datagrid-borders > .dx-datagrid-headers,
 .dx-datagrid-borders > .dx-datagrid-rowsview,
@@ -212,6 +212,16 @@
   text-align: center;
   line-height: 16px;
 }
+.dx-datagrid-export-menu .dx-menu-item .dx-icon-exportselected {
+  width: 16px;
+  height: 16px;
+  background-position: 0px 0px;
+  background-size: 16px 16px;
+  padding: 0px;
+  font-size: 16px;
+  text-align: center;
+  line-height: 16px;
+}
 .dx-datagrid-adaptive-more {
   cursor: pointer;
   font: 14px/1 DXIcons;
@@ -350,8 +360,8 @@
   opacity: 0.8;
 }
 .dx-pivotgrid-fields-container.dx-drag .dx-area-field.dx-area-box {
-  -webkit-box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.1), 0px 1px 3px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.1), 0px 1px 3px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 1px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2);
   border: 1px solid rgba(51, 122, 183, 0.5);
 }
 .dx-pivotgrid-fields-container .dx-area-field.dx-area-box {
@@ -425,7 +435,7 @@
   border-top: 1px solid #ddd;
 }
 .dx-pivotgrid.dx-row-lines .dx-pivotgrid-area-data tr:first-child > td {
-  border-top-width: 0px;
+  border-top-width: 0;
 }
 .dx-pivotgrid .dx-expand-icon-container {
   margin-left: -5px;
@@ -519,27 +529,27 @@
   border-left: 1px solid #ddd;
 }
 .dx-pivotgrid .dx-pivotgrid-area-data tbody td:first-child {
-  border-left: 0px;
+  border-left: 0;
 }
 .dx-pivotgrid .dx-pivotgrid-area-data tbody tr:first-child .dx-total,
 .dx-pivotgrid .dx-pivotgrid-area-data tbody tr:first-child .dx-grandtotal {
-  border-top-width: 0px;
+  border-top-width: 0;
 }
 .dx-pivotgrid .dx-pivotgrid-vertical-headers .dx-expand-border {
   border-top: 1px solid #ddd;
 }
 .dx-pivotgrid .dx-pivotgrid-vertical-headers .dx-last-cell {
-  border-right: 0px;
+  border-right: 0;
 }
 .dx-pivotgrid .dx-pivotgrid-vertical-headers td {
   min-width: 50px;
   border-right: 1px solid #ddd;
 }
 .dx-pivotgrid .dx-pivotgrid-vertical-headers tr:first-child td {
-  border-top: 0px;
+  border-top: 0;
 }
 .dx-pivotgrid .dx-pivotgrid-vertical-headers .dx-pivotgrid-fields-area-head td:last-child {
-  border-right: 0px;
+  border-right: 0;
 }
 .dx-pivotgrid .dx-pivotgrid-vertical-headers .dx-row-total,
 .dx-pivotgrid .dx-pivotgrid-area-data .dx-row-total {
@@ -568,10 +578,10 @@
   text-align: left;
 }
 .dx-pivotgrid .dx-pivotgrid-horizontal-headers td:first-child {
-  border-left: 0px;
+  border-left: 0;
 }
 .dx-pivotgrid .dx-pivotgrid-horizontal-headers tr:first-child td {
-  border-top: 0px;
+  border-top: 0;
 }
 .dx-pivotgrid .dx-expand-icon-container {
   width: 14px;
@@ -630,7 +640,7 @@
   padding: 10px;
 }
 .dx-pivotgrid .dx-popup-content .dx-pivotgrid-fields-area-head td {
-  padding: 0px 2px;
+  padding: 0 2px;
 }
 .dx-pivotgridfieldchooser .dx-area-fields {
   overflow: hidden;
@@ -657,25 +667,25 @@
 }
 .dx-pivotgridfieldchooser .dx-area {
   padding: 5px;
-  display: -webkit-flex;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-grow: 1;
   -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  -webkit-flex-direction: column;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
 }
 .dx-pivotgridfieldchooser .dx-area > .dx-scrollable,
 .dx-pivotgridfieldchooser .dx-area > .dx-treeview,
 .dx-pivotgridfieldchooser .dx-area > .dx-treeview > .dx-scrollable {
-  display: -webkit-flex;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-flex: 1;
@@ -692,8 +702,8 @@
 .dx-pivotgridfieldchooser .dx-area > .dx-scrollable > .dx-scrollable-wrapper,
 .dx-pivotgridfieldchooser .dx-area > .dx-treeview > .dx-scrollable-wrapper,
 .dx-pivotgridfieldchooser .dx-area > .dx-treeview > .dx-scrollable > .dx-scrollable-wrapper {
-  display: -webkit-flex;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-flex: 1;
@@ -715,13 +725,13 @@
 .dx-pivotgridfieldchooser .dx-area .dx-area-fields {
   margin-top: 3px;
   border: 1px solid #ddd;
-  display: -webkit-flex;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: column;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
   height: 0;
@@ -734,8 +744,8 @@
 .dx-pivotgridfieldchooser .dx-area-fields[group] {
   padding: 5px;
   background-color: rgba(221, 221, 221, 0.2);
-  display: -webkit-flex;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
@@ -817,34 +827,34 @@
 .dx-rtl.dx-pivotgrid .dx-area-row-cell,
 .dx-rtl.dx-pivotgrid .dx-area-description-cell {
   border-left: 1px solid #ddd;
-  border-right: 0px;
+  border-right: 0;
 }
 .dx-rtl.dx-pivotgrid .dx-pivotgrid-area-data tbody td {
-  border-left: 0px;
+  border-left: 0;
   border-right: 1px solid #ddd;
 }
 .dx-rtl.dx-pivotgrid .dx-pivotgrid-area-data tbody td:first-child {
   border-left: 1px solid #ddd;
-  border-right: 0px;
+  border-right: 0;
 }
 .dx-rtl.dx-pivotgrid .dx-pivotgrid-vertical-headers td {
-  border-right: 0px;
+  border-right: 0;
   border-left: 1px solid #ddd;
 }
 .dx-rtl.dx-pivotgrid .dx-pivotgrid-vertical-headers .dx-last-cell {
-  border-left: 0px;
-  border-right: 0px;
+  border-left: 0;
+  border-right: 0;
 }
 .dx-rtl.dx-pivotgrid .dx-pivotgrid-horizontal-headers.dx-vertical-scroll {
-  border-right: 0px;
+  border-right: 0;
   border-left: 1px solid #ddd;
 }
 .dx-rtl.dx-pivotgrid .dx-pivotgrid-horizontal-headers.dx-pivotgrid-area {
-  border-left: 0px;
+  border-left: 0;
 }
 .dx-rtl.dx-pivotgrid .dx-pivotgrid-horizontal-headers td:first-child {
   border-left: 1px solid #ddd;
-  border-right: 0px;
+  border-right: 0;
 }
 .dx-rtl.dx-pivotgrid .dx-pivotgrid-horizontal-headers td.dx-pivotgrid-expanded,
 .dx-rtl.dx-pivotgrid .dx-pivotgrid-horizontal-headers td.dx-pivotgrid-collapsed {
@@ -863,8 +873,8 @@
   margin-right: 5px;
 }
 .dx-rtl.dx-pivotgrid .dx-pivotgridfieldchooser-container .dx-col {
-  display: -webkit-flex;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
@@ -1145,7 +1155,7 @@
 }
 .dx-treeview-node-loadindicator {
   left: auto;
-  right: 0px;
+  right: 0;
 }
 .dx-rtl .dx-treeview-node .dx-checkbox {
   left: auto;
@@ -1164,12 +1174,16 @@
 }
 .dx-popup-wrapper.dx-scheduler-appointment-tooltip-wrapper .dx-overlay-content,
 .dx-scheduler .dx-scheduler-overlay-panel .dx-overlay-content {
-  -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.15);
 }
 .dx-popup-wrapper.dx-scheduler-appointment-tooltip-wrapper .dx-tooltip-appointment-item-marker-body,
 .dx-scheduler .dx-scheduler-overlay-panel .dx-tooltip-appointment-item-marker-body {
   background: #337ab7;
+}
+.dx-scheduler-win-no-touch .dx-scheduler-appointment {
+  -ms-touch-action: none;
+      touch-action: none;
 }
 .dx-filterbuilder {
   background-color: #fff;
@@ -3193,8 +3207,9 @@
   padding-bottom: 8px;
 }
 .dx-scrollable-customizable-scrollbars .dx-scrollable-container {
-  -ms-scrollbar-base-color: #fff;
-  -ms-scrollbar-arrow-color: #4b4b4b;
+  -ms-scrollbar-base-color: #757575;
+  -ms-scrollbar-arrow-color: #757575;
+  -ms-scrollbar-shadow-color: #fff;
   -ms-scrollbar-track-color: #fff;
 }
 .dx-scrollable-customizable-scrollbars .dx-scrollable-container::-webkit-scrollbar:horizontal {
@@ -4120,8 +4135,8 @@
   background: #fff;
   border-top: 1px solid rgba(51, 122, 183, 0.5);
   border-bottom: 1px solid rgba(51, 122, 183, 0.5);
-  -webkit-box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.1), 0px 1px 3px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.1), 0px 1px 3px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 1px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2);
 }
 .dx-list-item,
 .dx-list .dx-empty-message {
@@ -4208,7 +4223,7 @@
 }
 .dx-list-select-all-checkbox {
   float: left;
-  margin: -1px 0px -3px 10px;
+  margin: -1px 0 -3px 10px;
 }
 .dx-list-select-all-label {
   line-height: 1;
@@ -4261,8 +4276,8 @@
   background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 0;
-  -webkit-box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
-          box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
 }
 .dx-state-disabled.dx-list-item,
 .dx-state-disabled .dx-list-item {
@@ -4390,8 +4405,8 @@
   background: #fff;
   border-top: 1px solid rgba(51, 122, 183, 0.5);
   border-bottom: 1px solid rgba(51, 122, 183, 0.5);
-  -webkit-box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.1), 0px 1px 3px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.1), 0px 1px 3px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 1px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2);
 }
 .dx-device-mobile .dx-list-item,
 .dx-device-mobile .dx-list .dx-empty-message {
@@ -4478,7 +4493,7 @@
 }
 .dx-device-mobile .dx-list-select-all-checkbox {
   float: left;
-  margin: -1px 0px -3px 15px;
+  margin: -1px 0 -3px 15px;
 }
 .dx-device-mobile .dx-list-select-all-label {
   line-height: 1;
@@ -4531,8 +4546,8 @@
   background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 0;
-  -webkit-box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
-          box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
 }
 .dx-device-mobile .dx-state-disabled.dx-list-item,
 .dx-device-mobile .dx-state-disabled .dx-list-item {
@@ -4664,8 +4679,6 @@
 }
 .dx-numberbox-spin-touch-friendly .dx-numberbox-spin-container {
   width: 74px;
-}
-.dx-numberbox-spin-touch-friendly .dx-numberbox-spin-container {
   border-left: none;
 }
 .dx-numberbox-spin-touch-friendly .dx-numberbox-spin-up-icon,
@@ -4795,7 +4808,7 @@
   margin-left: -9px;
 }
 .dx-datebox-wrapper-list .dx-popup-content {
-  padding: 0px;
+  padding: 0;
 }
 .dx-datebox input[type="date"] {
   line-height: normal;
@@ -5071,7 +5084,8 @@
 .dx-toolbar-menu-section {
   border-bottom: 1px solid #ddd;
 }
-.dx-toolbar-menu-section .dx-toolbar-hidden-button .dx-button-content {
+.dx-toolbar-menu-section .dx-toolbar-hidden-button .dx-button-content,
+.dx-toolbar-menu-section .dx-toolbar-item-auto-hide .dx-button-content {
   padding: 0;
 }
 .dx-toolbar-menu-section .dx-button-content {
@@ -5153,8 +5167,8 @@
   font-weight: 600;
   line-height: 32px;
   padding: 10px;
-  -webkit-box-shadow: 0px 2px 3px 0px transparent;
-          box-shadow: 0px 2px 3px 0px transparent;
+  -webkit-box-shadow: 0 2px 3px 0 transparent;
+          box-shadow: 0 2px 3px 0 transparent;
   border-radius: 6px;
 }
 .dx-toast-icon {
@@ -5935,8 +5949,8 @@
   border: 1px solid #ddd;
   background: #fff;
   border-radius: 6px;
-  -webkit-box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
 }
 .dx-autocomplete .dx-texteditor-input {
   font-size: 1em;
@@ -5958,8 +5972,8 @@
   border-top: 0;
 }
 .dx-selectbox-popup-wrapper .dx-overlay-content {
-  -webkit-box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.175);
-          box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.175);
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+          box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
 }
 .dx-selectbox-popup-wrapper .dx-list {
   background-color: #fff;
@@ -6661,9 +6675,6 @@
 .dx-datagrid .dx-row > td {
   padding: 7px;
 }
-.dx-datagrid .dx-row > td.dx-command-adaptive {
-  padding: 5px 7px;
-}
 .dx-datagrid .dx-datagrid-content .dx-datagrid-table .dx-row .dx-command-edit-with-icons .dx-link {
   width: 18px;
   height: 18px;
@@ -6722,7 +6733,7 @@
   background-color: transparent;
 }
 .dx-editor-cell .dx-icon-clear {
-  left: 0px;
+  left: 0;
 }
 .dx-editor-cell .dx-texteditor {
   background: #fff;
@@ -6765,7 +6776,7 @@
   padding: 0 20px;
 }
 .dx-datagrid-column-chooser.dx-datagrid-column-chooser-mode-drag .dx-popup-content {
-  padding: 0px 20px 20px 20px;
+  padding: 0 20px 20px 20px;
 }
 .dx-datagrid-column-chooser.dx-datagrid-column-chooser-mode-drag .dx-popup-content .dx-treeview-search {
   margin-bottom: 10px;
@@ -6774,13 +6785,13 @@
   padding-left: 20px;
 }
 .dx-datagrid-column-chooser.dx-datagrid-column-chooser-mode-select .dx-popup-content {
-  padding: 0px 20px 20px 20px;
+  padding: 0 20px 20px 20px;
 }
 .dx-datagrid-column-chooser .dx-overlay-content {
   background-color: #fff;
   border-radius: 6px;
-  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
 .dx-datagrid-column-chooser .dx-overlay-content .dx-popup-title {
   padding-top: 7px;
@@ -6794,12 +6805,12 @@
   font-weight: normal;
   border: 1px solid #ddd;
   padding: 7px;
-  -webkit-box-shadow: 0px 1px 3px -1px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 1px 3px -1px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 1px 3px -1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1px 3px -1px rgba(0, 0, 0, 0.2);
 }
 .dx-datagrid-drag-header {
-  -webkit-box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.1), 0px 1px 3px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.1), 0px 1px 3px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 1px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2);
   color: #959595;
   font-weight: normal;
   padding: 7px;
@@ -6902,7 +6913,7 @@
 }
 .dx-datagrid-filter-range-overlay .dx-overlay-content .dx-editor-container.dx-highlight-outline::after {
   border-color: rgba(92, 184, 92, 0.5);
-  left: 0px;
+  left: 0;
 }
 .dx-datagrid-filter-range-overlay .dx-overlay-content .dx-texteditor .dx-texteditor-input {
   background-color: #fff;
@@ -6919,7 +6930,7 @@
   padding: 6px 5px 7px;
 }
 .dx-filter-menu.dx-menu .dx-menu-item .dx-menu-item-content .dx-icon {
-  margin: 0px 3px;
+  margin: 0 3px;
 }
 .dx-filter-menu .dx-menu-item-content .dx-icon.dx-icon-filter-operation-default {
   margin-top: 2px;
@@ -7074,7 +7085,7 @@
   border-bottom: 1px solid transparent;
 }
 .dx-datagrid-rowsview .dx-row.dx-edit-row:first-child > td {
-  border-top-width: 0px;
+  border-top-width: 0;
   border-bottom: 1px solid #ddd;
 }
 .dx-datagrid-rowsview .dx-row.dx-edit-row > td {
@@ -7132,31 +7143,37 @@
 .dx-datagrid-rowsview .dx-row-focused:focus {
   outline: none;
 }
-.dx-datagrid-rowsview .dx-row-focused.dx-data-row:not(.dx-edit-row) > td:not(.dx-focused),
-.dx-datagrid-rowsview .dx-row-focused.dx-data-row:not(.dx-edit-row) > tr > td:not(.dx-focused),
-.dx-datagrid-rowsview .dx-row-focused.dx-data-row:not(.dx-edit-row) .dx-command-edit:not(.dx-focused) .dx-link {
+.dx-datagrid-rowsview .dx-row-focused.dx-data-row > td:not(.dx-focused),
+.dx-datagrid-rowsview .dx-row-focused.dx-data-row > tr > td:not(.dx-focused),
+.dx-datagrid-rowsview .dx-row-focused.dx-data-row .dx-command-edit:not(.dx-focused) .dx-link {
   background-color: #337ab7;
   color: #fff;
 }
-.dx-datagrid-rowsview .dx-row-focused.dx-data-row:not(.dx-edit-row) > td:not(.dx-focused) .dx-datagrid-group-opened,
-.dx-datagrid-rowsview .dx-row-focused.dx-data-row:not(.dx-edit-row) > tr > td:not(.dx-focused) .dx-datagrid-group-opened,
-.dx-datagrid-rowsview .dx-row-focused.dx-data-row:not(.dx-edit-row) .dx-command-edit:not(.dx-focused) .dx-link .dx-datagrid-group-opened,
-.dx-datagrid-rowsview .dx-row-focused.dx-data-row:not(.dx-edit-row) > td:not(.dx-focused) .dx-datagrid-group-closed,
-.dx-datagrid-rowsview .dx-row-focused.dx-data-row:not(.dx-edit-row) > tr > td:not(.dx-focused) .dx-datagrid-group-closed,
-.dx-datagrid-rowsview .dx-row-focused.dx-data-row:not(.dx-edit-row) .dx-command-edit:not(.dx-focused) .dx-link .dx-datagrid-group-closed {
+.dx-datagrid-rowsview .dx-row-focused.dx-data-row > td:not(.dx-focused) .dx-texteditor-input,
+.dx-datagrid-rowsview .dx-row-focused.dx-data-row > tr > td:not(.dx-focused) .dx-texteditor-input,
+.dx-datagrid-rowsview .dx-row-focused.dx-data-row .dx-command-edit:not(.dx-focused) .dx-link .dx-texteditor-input {
+  border-radius: 0;
+}
+.dx-datagrid-rowsview .dx-row-focused.dx-data-row > td:not(.dx-focused) .dx-datagrid-group-opened,
+.dx-datagrid-rowsview .dx-row-focused.dx-data-row > tr > td:not(.dx-focused) .dx-datagrid-group-opened,
+.dx-datagrid-rowsview .dx-row-focused.dx-data-row .dx-command-edit:not(.dx-focused) .dx-link .dx-datagrid-group-opened,
+.dx-datagrid-rowsview .dx-row-focused.dx-data-row > td:not(.dx-focused) .dx-datagrid-group-closed,
+.dx-datagrid-rowsview .dx-row-focused.dx-data-row > tr > td:not(.dx-focused) .dx-datagrid-group-closed,
+.dx-datagrid-rowsview .dx-row-focused.dx-data-row .dx-command-edit:not(.dx-focused) .dx-link .dx-datagrid-group-closed {
   color: #fff;
 }
-.dx-datagrid-rowsview .dx-row-focused.dx-data-row:not(.dx-edit-row) > td,
-.dx-datagrid-rowsview .dx-row-focused.dx-data-row:not(.dx-edit-row) > tr:last-child > td {
-  border-bottom: 1px solid #337ab7;
-}
-.dx-datagrid-rowsview .dx-row-focused.dx-data-row:not(.dx-edit-row):not(.dx-row-lines) > td,
-.dx-datagrid-rowsview .dx-row-focused.dx-data-row:not(.dx-edit-row):not(.dx-row-lines) > tr:first-child > td {
-  border-top: 1px solid #337ab7;
-}
-.dx-datagrid-rowsview .dx-row-focused.dx-data-row:not(.dx-edit-row) .dx-command-edit .dx-link:focus {
+.dx-datagrid-rowsview .dx-row-focused.dx-data-row .dx-command-edit .dx-link:focus {
   background-color: #fff;
   color: #333;
+}
+.dx-datagrid-rowsview .dx-row-focused.dx-data-row > td,
+.dx-datagrid-rowsview .dx-row-focused.dx-data-row > tr:last-child > td {
+  border-bottom: 1px solid #337ab7;
+}
+.dx-datagrid-rowsview .dx-row-focused.dx-data-row:not(.dx-row-lines) > td,
+.dx-datagrid-rowsview .dx-row-focused.dx-data-row:not(.dx-row-lines) > tr:first-child > td {
+  border-top: 1px solid #337ab7;
+  border-bottom: 1px solid #337ab7;
 }
 .dx-datagrid-rowsview .dx-row-focused.dx-group-row {
   background-color: #337ab7;
@@ -7164,6 +7181,9 @@
 }
 .dx-datagrid-rowsview .dx-row-focused.dx-group-row .dx-datagrid-group-opened,
 .dx-datagrid-rowsview .dx-row-focused.dx-group-row .dx-datagrid-group-closed {
+  color: #fff;
+}
+.dx-datagrid-rowsview .dx-row-focused.dx-group-row .dx-datagrid-summary-item {
   color: #fff;
 }
 .dx-datagrid-rowsview .dx-selection.dx-row > td,
@@ -7261,7 +7281,7 @@
   min-width: inherit;
 }
 .dx-datagrid-revert-tooltip .dx-revert-button {
-  margin: 0px 1px;
+  margin: 0 1px;
   margin-left: 1px;
   background-color: #d9534f;
   border-color: #d43f3a;
@@ -7304,7 +7324,7 @@
   border-right-color: transparent;
 }
 .dx-rtl .dx-datagrid-filter-row .dx-menu .dx-menu-item-has-submenu.dx-menu-item-has-icon .dx-icon {
-  margin: 0px 3px;
+  margin: 0 3px;
 }
 .dx-rtl .dx-datagrid-filter-row td .dx-editor-container .dx-filter-range-content {
   padding: 7px 32px 7px 7px;
@@ -7682,9 +7702,6 @@
 .dx-treelist .dx-row > td {
   padding: 7px;
 }
-.dx-treelist .dx-row > td.dx-command-adaptive {
-  padding: 5px 7px;
-}
 .dx-treelist .dx-treelist-content .dx-treelist-table .dx-row .dx-command-edit-with-icons .dx-link {
   width: 18px;
   height: 18px;
@@ -7743,7 +7760,7 @@
   background-color: transparent;
 }
 .dx-editor-cell .dx-icon-clear {
-  left: 0px;
+  left: 0;
 }
 .dx-editor-cell .dx-texteditor {
   background: #fff;
@@ -7786,7 +7803,7 @@
   padding: 0 20px;
 }
 .dx-treelist-column-chooser.dx-treelist-column-chooser-mode-drag .dx-popup-content {
-  padding: 0px 20px 20px 20px;
+  padding: 0 20px 20px 20px;
 }
 .dx-treelist-column-chooser.dx-treelist-column-chooser-mode-drag .dx-popup-content .dx-treeview-search {
   margin-bottom: 10px;
@@ -7795,13 +7812,13 @@
   padding-left: 20px;
 }
 .dx-treelist-column-chooser.dx-treelist-column-chooser-mode-select .dx-popup-content {
-  padding: 0px 20px 20px 20px;
+  padding: 0 20px 20px 20px;
 }
 .dx-treelist-column-chooser .dx-overlay-content {
   background-color: #fff;
   border-radius: 6px;
-  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
 .dx-treelist-column-chooser .dx-overlay-content .dx-popup-title {
   padding-top: 7px;
@@ -7815,12 +7832,12 @@
   font-weight: normal;
   border: 1px solid #ddd;
   padding: 7px;
-  -webkit-box-shadow: 0px 1px 3px -1px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 1px 3px -1px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 1px 3px -1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1px 3px -1px rgba(0, 0, 0, 0.2);
 }
 .dx-treelist-drag-header {
-  -webkit-box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.1), 0px 1px 3px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.1), 0px 1px 3px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 1px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2);
   color: #959595;
   font-weight: normal;
   padding: 7px;
@@ -7923,7 +7940,7 @@
 }
 .dx-treelist-filter-range-overlay .dx-overlay-content .dx-editor-container.dx-highlight-outline::after {
   border-color: rgba(92, 184, 92, 0.5);
-  left: 0px;
+  left: 0;
 }
 .dx-treelist-filter-range-overlay .dx-overlay-content .dx-texteditor .dx-texteditor-input {
   background-color: #fff;
@@ -7940,7 +7957,7 @@
   padding: 6px 5px 7px;
 }
 .dx-filter-menu.dx-menu .dx-menu-item .dx-menu-item-content .dx-icon {
-  margin: 0px 3px;
+  margin: 0 3px;
 }
 .dx-filter-menu .dx-menu-item-content .dx-icon.dx-icon-filter-operation-default {
   margin-top: 2px;
@@ -8095,7 +8112,7 @@
   border-bottom: 1px solid transparent;
 }
 .dx-treelist-rowsview .dx-row.dx-edit-row:first-child > td {
-  border-top-width: 0px;
+  border-top-width: 0;
   border-bottom: 1px solid #ddd;
 }
 .dx-treelist-rowsview .dx-row.dx-edit-row > td {
@@ -8153,31 +8170,37 @@
 .dx-treelist-rowsview .dx-row-focused:focus {
   outline: none;
 }
-.dx-treelist-rowsview .dx-row-focused.dx-data-row:not(.dx-edit-row) > td:not(.dx-focused),
-.dx-treelist-rowsview .dx-row-focused.dx-data-row:not(.dx-edit-row) > tr > td:not(.dx-focused),
-.dx-treelist-rowsview .dx-row-focused.dx-data-row:not(.dx-edit-row) .dx-command-edit:not(.dx-focused) .dx-link {
+.dx-treelist-rowsview .dx-row-focused.dx-data-row > td:not(.dx-focused),
+.dx-treelist-rowsview .dx-row-focused.dx-data-row > tr > td:not(.dx-focused),
+.dx-treelist-rowsview .dx-row-focused.dx-data-row .dx-command-edit:not(.dx-focused) .dx-link {
   background-color: #337ab7;
   color: #fff;
 }
-.dx-treelist-rowsview .dx-row-focused.dx-data-row:not(.dx-edit-row) > td:not(.dx-focused) .dx-treelist-group-opened,
-.dx-treelist-rowsview .dx-row-focused.dx-data-row:not(.dx-edit-row) > tr > td:not(.dx-focused) .dx-treelist-group-opened,
-.dx-treelist-rowsview .dx-row-focused.dx-data-row:not(.dx-edit-row) .dx-command-edit:not(.dx-focused) .dx-link .dx-treelist-group-opened,
-.dx-treelist-rowsview .dx-row-focused.dx-data-row:not(.dx-edit-row) > td:not(.dx-focused) .dx-treelist-group-closed,
-.dx-treelist-rowsview .dx-row-focused.dx-data-row:not(.dx-edit-row) > tr > td:not(.dx-focused) .dx-treelist-group-closed,
-.dx-treelist-rowsview .dx-row-focused.dx-data-row:not(.dx-edit-row) .dx-command-edit:not(.dx-focused) .dx-link .dx-treelist-group-closed {
+.dx-treelist-rowsview .dx-row-focused.dx-data-row > td:not(.dx-focused) .dx-texteditor-input,
+.dx-treelist-rowsview .dx-row-focused.dx-data-row > tr > td:not(.dx-focused) .dx-texteditor-input,
+.dx-treelist-rowsview .dx-row-focused.dx-data-row .dx-command-edit:not(.dx-focused) .dx-link .dx-texteditor-input {
+  border-radius: 0;
+}
+.dx-treelist-rowsview .dx-row-focused.dx-data-row > td:not(.dx-focused) .dx-treelist-group-opened,
+.dx-treelist-rowsview .dx-row-focused.dx-data-row > tr > td:not(.dx-focused) .dx-treelist-group-opened,
+.dx-treelist-rowsview .dx-row-focused.dx-data-row .dx-command-edit:not(.dx-focused) .dx-link .dx-treelist-group-opened,
+.dx-treelist-rowsview .dx-row-focused.dx-data-row > td:not(.dx-focused) .dx-treelist-group-closed,
+.dx-treelist-rowsview .dx-row-focused.dx-data-row > tr > td:not(.dx-focused) .dx-treelist-group-closed,
+.dx-treelist-rowsview .dx-row-focused.dx-data-row .dx-command-edit:not(.dx-focused) .dx-link .dx-treelist-group-closed {
   color: #fff;
 }
-.dx-treelist-rowsview .dx-row-focused.dx-data-row:not(.dx-edit-row) > td,
-.dx-treelist-rowsview .dx-row-focused.dx-data-row:not(.dx-edit-row) > tr:last-child > td {
-  border-bottom: 1px solid #337ab7;
-}
-.dx-treelist-rowsview .dx-row-focused.dx-data-row:not(.dx-edit-row):not(.dx-row-lines) > td,
-.dx-treelist-rowsview .dx-row-focused.dx-data-row:not(.dx-edit-row):not(.dx-row-lines) > tr:first-child > td {
-  border-top: 1px solid #337ab7;
-}
-.dx-treelist-rowsview .dx-row-focused.dx-data-row:not(.dx-edit-row) .dx-command-edit .dx-link:focus {
+.dx-treelist-rowsview .dx-row-focused.dx-data-row .dx-command-edit .dx-link:focus {
   background-color: #fff;
   color: #333;
+}
+.dx-treelist-rowsview .dx-row-focused.dx-data-row > td,
+.dx-treelist-rowsview .dx-row-focused.dx-data-row > tr:last-child > td {
+  border-bottom: 1px solid #337ab7;
+}
+.dx-treelist-rowsview .dx-row-focused.dx-data-row:not(.dx-row-lines) > td,
+.dx-treelist-rowsview .dx-row-focused.dx-data-row:not(.dx-row-lines) > tr:first-child > td {
+  border-top: 1px solid #337ab7;
+  border-bottom: 1px solid #337ab7;
 }
 .dx-treelist-rowsview .dx-row-focused.dx-group-row {
   background-color: #337ab7;
@@ -8185,6 +8208,9 @@
 }
 .dx-treelist-rowsview .dx-row-focused.dx-group-row .dx-treelist-group-opened,
 .dx-treelist-rowsview .dx-row-focused.dx-group-row .dx-treelist-group-closed {
+  color: #fff;
+}
+.dx-treelist-rowsview .dx-row-focused.dx-group-row .dx-datagrid-summary-item {
   color: #fff;
 }
 .dx-treelist-rowsview .dx-selection.dx-row > td,
@@ -8282,7 +8308,7 @@
   min-width: inherit;
 }
 .dx-treelist-revert-tooltip .dx-revert-button {
-  margin: 0px 1px;
+  margin: 0 1px;
   margin-left: 1px;
   background-color: #d9534f;
   border-color: #d43f3a;
@@ -8325,7 +8351,7 @@
   border-right-color: transparent;
 }
 .dx-rtl .dx-treelist-filter-row .dx-menu .dx-menu-item-has-submenu.dx-menu-item-has-icon .dx-icon {
-  margin: 0px 3px;
+  margin: 0 3px;
 }
 .dx-rtl .dx-treelist-filter-row td .dx-editor-container .dx-filter-range-content {
   padding: 7px 32px 7px 7px;
@@ -8427,7 +8453,7 @@
   white-space: nowrap;
 }
 .dx-treelist-checkbox-size {
-  line-height: 0px;
+  line-height: 0;
 }
 .dx-treelist-cell-expandable .dx-checkbox,
 .dx-treelist-select-all .dx-checkbox {
@@ -8468,7 +8494,7 @@
 }
 .dx-rtl .dx-treelist-icon-container.dx-editor-inline-block {
   padding-left: 23px;
-  padding-right: 0px;
+  padding-right: 0;
 }
 .dx-treelist-filter-panel .dx-icon-filter,
 .dx-treelist-filter-panel .dx-treelist-filter-panel-text,
@@ -8562,8 +8588,8 @@
 .dx-context-menu-container-border {
   background-color: transparent;
   border: 1px solid #ddd;
-  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
 }
 .dx-context-menu-content-delimiter {
   background-color: #fff;
@@ -8640,8 +8666,8 @@
 }
 .dx-menu-adaptive-mode .dx-treeview,
 .dx-menu-adaptive-mode .dx-treeview.dx-state-focused {
-  -webkit-box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
-          box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
 }
 .dx-menu-adaptive-mode .dx-treeview-toggle-item-visibility {
   font-size: 18px;
@@ -8792,7 +8818,7 @@
 }
 .dx-calendar-navigator-previous-month.dx-button,
 .dx-calendar-navigator-next-view.dx-button {
-  margin: 0px 1px;
+  margin: 0 1px;
 }
 .dx-calendar-navigator-previous-month .dx-button-content,
 .dx-calendar-navigator-next-view .dx-button-content {
@@ -8800,7 +8826,7 @@
 }
 .dx-calendar-navigator-previous-view,
 .dx-calendar-navigator-previous-month {
-  left: 0px;
+  left: 0;
 }
 .dx-calendar-navigator-previous-view.dx-button,
 .dx-calendar-navigator-previous-month.dx-button {
@@ -8812,7 +8838,7 @@
 }
 .dx-calendar-navigator-next-view,
 .dx-calendar-navigator-next-month {
-  right: 0px;
+  right: 0;
 }
 .dx-calendar-navigator-next-view.dx-button,
 .dx-calendar-navigator-next-month.dx-button {
@@ -8836,12 +8862,12 @@
   padding-bottom: 10px;
 }
 .dx-calendar-body thead tr th {
-  -webkit-box-shadow: inset 0px -1px 0px #ddd;
-          box-shadow: inset 0px -1px 0px #ddd;
+  -webkit-box-shadow: inset 0 -1px 0 #ddd;
+          box-shadow: inset 0 -1px 0 #ddd;
   color: #999999;
 }
 .dx-calendar-body table {
-  border-spacing: 0px;
+  border-spacing: 0;
 }
 .dx-calendar-body table th {
   color: #999999;
@@ -8862,8 +8888,8 @@
   font-weight: bold;
 }
 .dx-calendar-cell.dx-state-hover {
-  -webkit-box-shadow: inset 0px -1px 0px 1000px #f5f5f5;
-          box-shadow: inset 0px -1px 0px 1000px #f5f5f5;
+  -webkit-box-shadow: inset 0 -1px 0 1000px #f5f5f5;
+          box-shadow: inset 0 -1px 0 1000px #f5f5f5;
   color: #333;
 }
 .dx-calendar-cell.dx-calendar-other-view,
@@ -8885,24 +8911,24 @@
           box-shadow: none;
 }
 .dx-calendar-cell.dx-state-active:not(.dx-calendar-empty-cell):not(.dx-calendar-selected-date) {
-  -webkit-box-shadow: inset 0px -1px 0px 1000px rgba(96, 96, 96, 0.2);
-          box-shadow: inset 0px -1px 0px 1000px rgba(96, 96, 96, 0.2);
+  -webkit-box-shadow: inset 0 -1px 0 1000px rgba(96, 96, 96, 0.2);
+          box-shadow: inset 0 -1px 0 1000px rgba(96, 96, 96, 0.2);
 }
 .dx-calendar-cell.dx-calendar-contoured-date {
-  -webkit-box-shadow: inset 0px 0px 0px 1px #bebebe;
-          box-shadow: inset 0px 0px 0px 1px #bebebe;
+  -webkit-box-shadow: inset 0 0 0 1px #bebebe;
+          box-shadow: inset 0 0 0 1px #bebebe;
 }
 .dx-calendar-cell.dx-calendar-selected-date,
 .dx-calendar-cell.dx-calendar-selected-date.dx-calendar-today {
   color: #fff;
-  -webkit-box-shadow: inset 0px 0px 0px 1000px #337ab7;
-          box-shadow: inset 0px 0px 0px 1000px #337ab7;
+  -webkit-box-shadow: inset 0 0 0 1000px #337ab7;
+          box-shadow: inset 0 0 0 1000px #337ab7;
   font-weight: normal;
 }
 .dx-calendar-cell.dx-calendar-selected-date.dx-calendar-contoured-date,
 .dx-calendar-cell.dx-calendar-selected-date.dx-calendar-today.dx-calendar-contoured-date {
-  -webkit-box-shadow: inset 0px 0px 0px 1px #bebebe, inset 0px 0px 0px 1000px #337ab7;
-          box-shadow: inset 0px 0px 0px 1px #bebebe, inset 0px 0px 0px 1000px #337ab7;
+  -webkit-box-shadow: inset 0 0 0 1px #bebebe, inset 0 0 0 1000px #337ab7;
+          box-shadow: inset 0 0 0 1px #bebebe, inset 0 0 0 1000px #337ab7;
 }
 .dx-invalid.dx-calendar {
   border-color: rgba(217, 83, 79, 0.4);
@@ -8990,7 +9016,7 @@
   top: 5px;
   left: 19px;
 }
-.dx-treeview-item-with-checkbox.dx-state-focused .dx-checkbox-icon {
+.dx-treeview-item-with-checkbox.dx-state-focused > .dx-checkbox .dx-checkbox-icon {
   border: 1px solid #337ab7;
 }
 .dx-treeview-item-without-checkbox.dx-state-selected > .dx-treeview-item {
@@ -9488,8 +9514,8 @@
   background-color: #63a0d4;
   position: absolute;
   pointer-events: none;
-  -webkit-box-shadow: 0 1px 0 0px rgba(255, 255, 255, 0.1);
-          box-shadow: 0 1px 0 0px rgba(255, 255, 255, 0.1);
+  -webkit-box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+          box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
 }
 .dx-scheduler-date-time-indicator:before {
   font-size: 30px;
@@ -9498,7 +9524,7 @@
   z-index: 1000;
   margin-top: -14px;
   margin-left: -12px;
-  text-shadow: rgba(255, 255, 255, 0.1) 1px 0px 0px;
+  text-shadow: rgba(255, 255, 255, 0.1) 1px 0 0;
 }
 .dx-scheduler-date-time-shader {
   pointer-events: none;
@@ -9919,7 +9945,7 @@
 .dx-scheduler-work-space-week .dx-scheduler-all-day-appointment .dx-scheduler-appointment-content,
 .dx-scheduler-work-space-work-week .dx-scheduler-all-day-appointment .dx-scheduler-appointment-content,
 .dx-scheduler-work-space-day.dx-scheduler-work-space-overlapping .dx-scheduler-all-day-appointment .dx-scheduler-appointment-content {
-  padding: 0px 7px;
+  padding: 0 7px;
 }
 .dx-scheduler-scrollable-fixed-content {
   height: 100%;
@@ -10819,7 +10845,7 @@
   padding-right: 10px;
 }
 .dx-scheduler-time-panel-row:first-child .dx-scheduler-time-panel-cell > div {
-  margin-top: 0px;
+  margin-top: 0;
 }
 .dx-scheduler-time-panel-cell:after {
   position: absolute;
@@ -10909,16 +10935,16 @@
   -webkit-touch-callout: none;
   background-color: #337ab7;
   color: #fff;
-  -webkit-box-shadow: inset 0px 2px 0px 0px rgba(0, 0, 0, 0.3);
-          box-shadow: inset 0px 2px 0px 0px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: inset 0 2px 0 0 rgba(0, 0, 0, 0.3);
+          box-shadow: inset 0 2px 0 0 rgba(0, 0, 0, 0.3);
   left: 0;
   min-width: 4px;
   min-height: 4px;
 }
 .dx-scheduler-appointment.dx-state-active,
 .dx-scheduler-appointment.dx-resizable-resizing {
-  -webkit-box-shadow: inset 0px -2px 0px 0px rgba(0, 0, 0, 0.3), inset 0px 2px 0px 0px rgba(0, 0, 0, 0.3);
-          box-shadow: inset 0px -2px 0px 0px rgba(0, 0, 0, 0.3), inset 0px 2px 0px 0px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: inset 0 -2px 0 0 rgba(0, 0, 0, 0.3), inset 0 2px 0 0 rgba(0, 0, 0, 0.3);
+          box-shadow: inset 0 -2px 0 0 rgba(0, 0, 0, 0.3), inset 0 2px 0 0 rgba(0, 0, 0, 0.3);
 }
 .dx-scheduler-appointment.dx-state-focused {
   -webkit-box-shadow: none;
@@ -10938,12 +10964,12 @@
   opacity: 0.98;
 }
 .dx-scheduler-appointment.dx-state-hover {
-  -webkit-box-shadow: inset 0px 5px 0px 0px rgba(0, 0, 0, 0.3);
-          box-shadow: inset 0px 5px 0px 0px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: inset 0 5px 0 0 rgba(0, 0, 0, 0.3);
+          box-shadow: inset 0 5px 0 0 rgba(0, 0, 0, 0.3);
 }
 .dx-scheduler-appointment.dx-state-hover.dx-resizable {
-  -webkit-box-shadow: inset 0px 5px 0px 0px rgba(0, 0, 0, 0.3), inset 0px -2px 0px 0px rgba(0, 0, 0, 0.3);
-          box-shadow: inset 0px 5px 0px 0px rgba(0, 0, 0, 0.3), inset 0px -2px 0px 0px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: inset 0 5px 0 0 rgba(0, 0, 0, 0.3), inset 0 -2px 0 0 rgba(0, 0, 0, 0.3);
+          box-shadow: inset 0 5px 0 0 rgba(0, 0, 0, 0.3), inset 0 -2px 0 0 rgba(0, 0, 0, 0.3);
 }
 .dx-scheduler-appointment.dx-state-hover .dx-resizable-handle-top {
   height: 5px;
@@ -10952,8 +10978,8 @@
   width: 5px;
 }
 .dx-scheduler-appointment.dx-draggable-dragging {
-  -webkit-box-shadow: 7px 7px 15px 0px rgba(50, 50, 50, 0.2), inset 0px -2px 0px 0px rgba(0, 0, 0, 0.3), inset 0px 2px 0px 0px rgba(0, 0, 0, 0.3);
-          box-shadow: 7px 7px 15px 0px rgba(50, 50, 50, 0.2), inset 0px -2px 0px 0px rgba(0, 0, 0, 0.3), inset 0px 2px 0px 0px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 7px 7px 15px 0 rgba(50, 50, 50, 0.2), inset 0 -2px 0 0 rgba(0, 0, 0, 0.3), inset 0 2px 0 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 7px 7px 15px 0 rgba(50, 50, 50, 0.2), inset 0 -2px 0 0 rgba(0, 0, 0, 0.3), inset 0 2px 0 0 rgba(0, 0, 0, 0.3);
 }
 .dx-scheduler-appointment.dx-resizable-resizing,
 .dx-scheduler-appointment.dx-draggable-dragging {
@@ -11007,14 +11033,14 @@
 .dx-scheduler-timeline .dx-scheduler-appointment,
 .dx-scheduler-work-space-month .dx-scheduler-appointment,
 .dx-scheduler-all-day-appointment {
-  -webkit-box-shadow: inset 2px 0px 0px 0px rgba(0, 0, 0, 0.3);
-          box-shadow: inset 2px 0px 0px 0px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: inset 2px 0 0 0 rgba(0, 0, 0, 0.3);
+          box-shadow: inset 2px 0 0 0 rgba(0, 0, 0, 0.3);
 }
 .dx-rtl .dx-scheduler-timeline .dx-scheduler-appointment,
 .dx-rtl .dx-scheduler-work-space-month .dx-scheduler-appointment,
 .dx-rtl .dx-scheduler-all-day-appointment {
-  -webkit-box-shadow: inset -2px 0px 0px 0px rgba(0, 0, 0, 0.3);
-          box-shadow: inset -2px 0px 0px 0px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: inset -2px 0 0 0 rgba(0, 0, 0, 0.3);
+          box-shadow: inset -2px 0 0 0 rgba(0, 0, 0, 0.3);
 }
 .dx-scheduler-timeline .dx-scheduler-appointment.dx-state-active,
 .dx-scheduler-work-space-month .dx-scheduler-appointment.dx-state-active,
@@ -11022,8 +11048,8 @@
 .dx-scheduler-timeline .dx-scheduler-appointment.dx-resizable-resizing,
 .dx-scheduler-work-space-month .dx-scheduler-appointment.dx-resizable-resizing,
 .dx-scheduler-all-day-appointment.dx-resizable-resizing {
-  -webkit-box-shadow: inset -2px 0px 0px 0px rgba(0, 0, 0, 0.3), inset 2px 0px 0px 0px rgba(0, 0, 0, 0.3);
-          box-shadow: inset -2px 0px 0px 0px rgba(0, 0, 0, 0.3), inset 2px 0px 0px 0px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: inset -2px 0 0 0 rgba(0, 0, 0, 0.3), inset 2px 0 0 0 rgba(0, 0, 0, 0.3);
+          box-shadow: inset -2px 0 0 0 rgba(0, 0, 0, 0.3), inset 2px 0 0 0 rgba(0, 0, 0, 0.3);
 }
 .dx-scheduler-timeline .dx-scheduler-appointment.dx-state-focused,
 .dx-scheduler-work-space-month .dx-scheduler-appointment.dx-state-focused,
@@ -11051,32 +11077,32 @@
 .dx-scheduler-timeline .dx-scheduler-appointment.dx-state-hover,
 .dx-scheduler-work-space-month .dx-scheduler-appointment.dx-state-hover,
 .dx-scheduler-all-day-appointment.dx-state-hover {
-  -webkit-box-shadow: inset 5px 0px 0px 0px rgba(0, 0, 0, 0.3);
-          box-shadow: inset 5px 0px 0px 0px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: inset 5px 0 0 0 rgba(0, 0, 0, 0.3);
+          box-shadow: inset 5px 0 0 0 rgba(0, 0, 0, 0.3);
 }
 .dx-scheduler-timeline .dx-scheduler-appointment.dx-state-hover.dx-resizable,
 .dx-scheduler-work-space-month .dx-scheduler-appointment.dx-state-hover.dx-resizable,
 .dx-scheduler-all-day-appointment.dx-state-hover.dx-resizable {
-  -webkit-box-shadow: inset 5px 0px 0px 0px rgba(0, 0, 0, 0.3), inset -2px 0px 0px 0px rgba(0, 0, 0, 0.3);
-          box-shadow: inset 5px 0px 0px 0px rgba(0, 0, 0, 0.3), inset -2px 0px 0px 0px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: inset 5px 0 0 0 rgba(0, 0, 0, 0.3), inset -2px 0 0 0 rgba(0, 0, 0, 0.3);
+          box-shadow: inset 5px 0 0 0 rgba(0, 0, 0, 0.3), inset -2px 0 0 0 rgba(0, 0, 0, 0.3);
 }
 .dx-rtl .dx-scheduler-timeline .dx-scheduler-appointment.dx-state-hover,
 .dx-rtl .dx-scheduler-work-space-month .dx-scheduler-appointment.dx-state-hover,
 .dx-rtl .dx-scheduler-all-day-appointment.dx-state-hover {
-  -webkit-box-shadow: inset -5px 0px 0px 0px rgba(0, 0, 0, 0.3);
-          box-shadow: inset -5px 0px 0px 0px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: inset -5px 0 0 0 rgba(0, 0, 0, 0.3);
+          box-shadow: inset -5px 0 0 0 rgba(0, 0, 0, 0.3);
 }
 .dx-rtl .dx-scheduler-timeline .dx-scheduler-appointment.dx-state-hover.dx-resizable,
 .dx-rtl .dx-scheduler-work-space-month .dx-scheduler-appointment.dx-state-hover.dx-resizable,
 .dx-rtl .dx-scheduler-all-day-appointment.dx-state-hover.dx-resizable {
-  -webkit-box-shadow: inset -5px 0px 0px 0px rgba(0, 0, 0, 0.3), inset 2px 0px 0px 0px rgba(0, 0, 0, 0.3);
-          box-shadow: inset -5px 0px 0px 0px rgba(0, 0, 0, 0.3), inset 2px 0px 0px 0px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: inset -5px 0 0 0 rgba(0, 0, 0, 0.3), inset 2px 0 0 0 rgba(0, 0, 0, 0.3);
+          box-shadow: inset -5px 0 0 0 rgba(0, 0, 0, 0.3), inset 2px 0 0 0 rgba(0, 0, 0, 0.3);
 }
 .dx-scheduler-timeline .dx-scheduler-appointment.dx-draggable-dragging,
 .dx-scheduler-work-space-month .dx-scheduler-appointment.dx-draggable-dragging,
 .dx-scheduler-all-day-appointment.dx-draggable-dragging {
-  -webkit-box-shadow: inset -2px 0px 0px 0px rgba(0, 0, 0, 0.3), inset 2px 0px 0px 0px rgba(0, 0, 0, 0.3), 7px 7px 15px 0px rgba(50, 50, 50, 0.2);
-          box-shadow: inset -2px 0px 0px 0px rgba(0, 0, 0, 0.3), inset 2px 0px 0px 0px rgba(0, 0, 0, 0.3), 7px 7px 15px 0px rgba(50, 50, 50, 0.2);
+  -webkit-box-shadow: inset -2px 0 0 0 rgba(0, 0, 0, 0.3), inset 2px 0 0 0 rgba(0, 0, 0, 0.3), 7px 7px 15px 0 rgba(50, 50, 50, 0.2);
+          box-shadow: inset -2px 0 0 0 rgba(0, 0, 0, 0.3), inset 2px 0 0 0 rgba(0, 0, 0, 0.3), 7px 7px 15px 0 rgba(50, 50, 50, 0.2);
 }
 .dx-scheduler-all-day-appointment .dx-scheduler-appointment-reduced-icon {
   position: absolute;
@@ -11160,10 +11186,10 @@
   padding-top: 13px;
 }
 .dx-scheduler-appointment-popup .dx-scheduler-recurrence-rule-item.dx-field-item.dx-label-h-align.dx-flex-layout {
-  -webkit-align-items: start;
   -webkit-box-align: start;
-  -ms-flex-align: start;
-      align-items: start;
+  -webkit-align-items: start;
+      -ms-flex-align: start;
+          align-items: start;
 }
 .dx-scheduler-appointment-popup .dx-scheduler-recurrence-rule-item.dx-field-item .dx-field-value,
 .dx-scheduler-appointment-popup .dx-scheduler-recurrence-rule-item.dx-field-item .dx-field-label {
@@ -11496,9 +11522,9 @@
   padding-left: 5px;
 }
 .dx-scheduler-agenda-nodata {
+  text-align: center;
   font-size: 20px;
   opacity: 0.5;
-  text-align: center;
   position: absolute;
   top: 45%;
   left: 0;
@@ -11979,7 +12005,7 @@
   border-top: 1px solid rgba(221, 221, 221, 0.6);
 }
 .dx-scheduler-work-space-vertical-grouped .dx-scheduler-time-panel-cell.dx-scheduler-first-group-cell > div {
-  margin-top: 0px;
+  margin-top: 0;
 }
 .dx-scheduler-work-space-vertical-grouped .dx-scheduler-time-panel-cell.dx-scheduler-last-group-cell {
   border-bottom: none;
@@ -12365,63 +12391,63 @@
 }
 .dx-scheduler-work-space-day:not(.dx-scheduler-work-space-vertical-grouped) .dx-scrollable.dx-scheduler-date-table-scrollable,
 .dx-scheduler-work-space-day:not(.dx-scheduler-work-space-vertical-grouped) .dx-scrollable.dx-scheduler-sidebar-scrollable {
-  padding-bottom: 0;
-  margin-bottom: 0;
+  padding-bottom: 10px;
+  margin-bottom: -10px;
 }
 .dx-scheduler-work-space-day:not(.dx-scheduler-work-space-vertical-grouped)[dx-group-row-count='1'] .dx-scrollable.dx-scheduler-date-table-scrollable,
 .dx-scheduler-work-space-day:not(.dx-scheduler-work-space-vertical-grouped)[dx-group-row-count='1'] .dx-scrollable.dx-scheduler-sidebar-scrollable {
-  padding-bottom: 30px;
-  margin-bottom: -30px;
+  padding-bottom: 40px;
+  margin-bottom: -40px;
 }
 .dx-scheduler-work-space-day:not(.dx-scheduler-work-space-vertical-grouped)[dx-group-row-count='2'] .dx-scrollable.dx-scheduler-date-table-scrollable,
 .dx-scheduler-work-space-day:not(.dx-scheduler-work-space-vertical-grouped)[dx-group-row-count='2'] .dx-scrollable.dx-scheduler-sidebar-scrollable {
-  padding-bottom: 60px;
-  margin-bottom: -60px;
+  padding-bottom: 70px;
+  margin-bottom: -70px;
 }
 .dx-scheduler-work-space-day:not(.dx-scheduler-work-space-vertical-grouped)[dx-group-row-count='3'] .dx-scrollable.dx-scheduler-date-table-scrollable,
 .dx-scheduler-work-space-day:not(.dx-scheduler-work-space-vertical-grouped)[dx-group-row-count='3'] .dx-scrollable.dx-scheduler-sidebar-scrollable {
-  padding-bottom: 90px;
-  margin-bottom: -90px;
+  padding-bottom: 100px;
+  margin-bottom: -100px;
 }
 .dx-scheduler-work-space-day:not(.dx-scheduler-work-space-vertical-grouped).dx-scheduler-work-space-all-day .dx-scrollable.dx-scheduler-date-table-scrollable,
 .dx-scheduler-work-space-day:not(.dx-scheduler-work-space-vertical-grouped).dx-scheduler-work-space-all-day .dx-scrollable.dx-scheduler-sidebar-scrollable {
-  padding-bottom: 75px;
-  margin-bottom: -75px;
-}
-.dx-scheduler-work-space-day:not(.dx-scheduler-work-space-vertical-grouped).dx-scheduler-work-space-all-day[dx-group-row-count='1'] .dx-scrollable.dx-scheduler-date-table-scrollable,
-.dx-scheduler-work-space-day:not(.dx-scheduler-work-space-vertical-grouped).dx-scheduler-work-space-all-day[dx-group-row-count='1'] .dx-scrollable.dx-scheduler-sidebar-scrollable {
-  padding-bottom: 105px;
-  margin-bottom: -105px;
-}
-.dx-scheduler-work-space-day:not(.dx-scheduler-work-space-vertical-grouped).dx-scheduler-work-space-all-day[dx-group-row-count='2'] .dx-scrollable.dx-scheduler-date-table-scrollable,
-.dx-scheduler-work-space-day:not(.dx-scheduler-work-space-vertical-grouped).dx-scheduler-work-space-all-day[dx-group-row-count='2'] .dx-scrollable.dx-scheduler-sidebar-scrollable {
-  padding-bottom: 135px;
-  margin-bottom: -135px;
-}
-.dx-scheduler-work-space-day:not(.dx-scheduler-work-space-vertical-grouped).dx-scheduler-work-space-all-day[dx-group-row-count='3'] .dx-scrollable.dx-scheduler-date-table-scrollable,
-.dx-scheduler-work-space-day:not(.dx-scheduler-work-space-vertical-grouped).dx-scheduler-work-space-all-day[dx-group-row-count='3'] .dx-scrollable.dx-scheduler-sidebar-scrollable {
-  padding-bottom: 165px;
-  margin-bottom: -165px;
-}
-.dx-scheduler-work-space-day:not(.dx-scheduler-work-space-vertical-grouped).dx-scheduler-work-space-all-day-collapsed .dx-scrollable.dx-scheduler-date-table-scrollable,
-.dx-scheduler-work-space-day:not(.dx-scheduler-work-space-vertical-grouped).dx-scheduler-work-space-all-day-collapsed .dx-scrollable.dx-scheduler-sidebar-scrollable {
-  padding-bottom: 25px;
-  margin-bottom: -25px;
-}
-.dx-scheduler-work-space-day:not(.dx-scheduler-work-space-vertical-grouped).dx-scheduler-work-space-all-day-collapsed[dx-group-row-count='1'] .dx-scrollable.dx-scheduler-date-table-scrollable,
-.dx-scheduler-work-space-day:not(.dx-scheduler-work-space-vertical-grouped).dx-scheduler-work-space-all-day-collapsed[dx-group-row-count='1'] .dx-scrollable.dx-scheduler-sidebar-scrollable {
-  padding-bottom: 55px;
-  margin-bottom: -55px;
-}
-.dx-scheduler-work-space-day:not(.dx-scheduler-work-space-vertical-grouped).dx-scheduler-work-space-all-day-collapsed[dx-group-row-count='2'] .dx-scrollable.dx-scheduler-date-table-scrollable,
-.dx-scheduler-work-space-day:not(.dx-scheduler-work-space-vertical-grouped).dx-scheduler-work-space-all-day-collapsed[dx-group-row-count='2'] .dx-scrollable.dx-scheduler-sidebar-scrollable {
   padding-bottom: 85px;
   margin-bottom: -85px;
 }
-.dx-scheduler-work-space-day:not(.dx-scheduler-work-space-vertical-grouped).dx-scheduler-work-space-all-day-collapsed[dx-group-row-count='3'] .dx-scrollable.dx-scheduler-date-table-scrollable,
-.dx-scheduler-work-space-day:not(.dx-scheduler-work-space-vertical-grouped).dx-scheduler-work-space-all-day-collapsed[dx-group-row-count='3'] .dx-scrollable.dx-scheduler-sidebar-scrollable {
+.dx-scheduler-work-space-day:not(.dx-scheduler-work-space-vertical-grouped).dx-scheduler-work-space-all-day[dx-group-row-count='1'] .dx-scrollable.dx-scheduler-date-table-scrollable,
+.dx-scheduler-work-space-day:not(.dx-scheduler-work-space-vertical-grouped).dx-scheduler-work-space-all-day[dx-group-row-count='1'] .dx-scrollable.dx-scheduler-sidebar-scrollable {
   padding-bottom: 115px;
   margin-bottom: -115px;
+}
+.dx-scheduler-work-space-day:not(.dx-scheduler-work-space-vertical-grouped).dx-scheduler-work-space-all-day[dx-group-row-count='2'] .dx-scrollable.dx-scheduler-date-table-scrollable,
+.dx-scheduler-work-space-day:not(.dx-scheduler-work-space-vertical-grouped).dx-scheduler-work-space-all-day[dx-group-row-count='2'] .dx-scrollable.dx-scheduler-sidebar-scrollable {
+  padding-bottom: 145px;
+  margin-bottom: -145px;
+}
+.dx-scheduler-work-space-day:not(.dx-scheduler-work-space-vertical-grouped).dx-scheduler-work-space-all-day[dx-group-row-count='3'] .dx-scrollable.dx-scheduler-date-table-scrollable,
+.dx-scheduler-work-space-day:not(.dx-scheduler-work-space-vertical-grouped).dx-scheduler-work-space-all-day[dx-group-row-count='3'] .dx-scrollable.dx-scheduler-sidebar-scrollable {
+  padding-bottom: 175px;
+  margin-bottom: -175px;
+}
+.dx-scheduler-work-space-day:not(.dx-scheduler-work-space-vertical-grouped).dx-scheduler-work-space-all-day-collapsed .dx-scrollable.dx-scheduler-date-table-scrollable,
+.dx-scheduler-work-space-day:not(.dx-scheduler-work-space-vertical-grouped).dx-scheduler-work-space-all-day-collapsed .dx-scrollable.dx-scheduler-sidebar-scrollable {
+  padding-bottom: 35px;
+  margin-bottom: -35px;
+}
+.dx-scheduler-work-space-day:not(.dx-scheduler-work-space-vertical-grouped).dx-scheduler-work-space-all-day-collapsed[dx-group-row-count='1'] .dx-scrollable.dx-scheduler-date-table-scrollable,
+.dx-scheduler-work-space-day:not(.dx-scheduler-work-space-vertical-grouped).dx-scheduler-work-space-all-day-collapsed[dx-group-row-count='1'] .dx-scrollable.dx-scheduler-sidebar-scrollable {
+  padding-bottom: 65px;
+  margin-bottom: -65px;
+}
+.dx-scheduler-work-space-day:not(.dx-scheduler-work-space-vertical-grouped).dx-scheduler-work-space-all-day-collapsed[dx-group-row-count='2'] .dx-scrollable.dx-scheduler-date-table-scrollable,
+.dx-scheduler-work-space-day:not(.dx-scheduler-work-space-vertical-grouped).dx-scheduler-work-space-all-day-collapsed[dx-group-row-count='2'] .dx-scrollable.dx-scheduler-sidebar-scrollable {
+  padding-bottom: 95px;
+  margin-bottom: -95px;
+}
+.dx-scheduler-work-space-day:not(.dx-scheduler-work-space-vertical-grouped).dx-scheduler-work-space-all-day-collapsed[dx-group-row-count='3'] .dx-scrollable.dx-scheduler-date-table-scrollable,
+.dx-scheduler-work-space-day:not(.dx-scheduler-work-space-vertical-grouped).dx-scheduler-work-space-all-day-collapsed[dx-group-row-count='3'] .dx-scrollable.dx-scheduler-sidebar-scrollable {
+  padding-bottom: 125px;
+  margin-bottom: -125px;
 }
 .dx-scheduler-work-space-day:not(.dx-scheduler-work-space-grouped) .dx-scheduler-all-day-title {
   top: 57px;
@@ -13515,6 +13541,12 @@
 .dx-filemanager .dx-filemanager-files-view {
   background: #fff;
 }
+.dx-filemanager .dx-filemanager-files-view.dx-filemanager-details .dx-filemanager-details-item-thumbnail {
+  font-size: 18px;
+}
+.dx-filemanager-dirs-tree.dx-treeview .dx-treeview-item-content > i {
+  margin-bottom: 0;
+}
 .dx-filemanager-dirs-tree.dx-treeview .dx-state-focused > .dx-treeview-item {
   background: #fff;
 }
@@ -13533,6 +13565,10 @@
 .dx-filemanager-file-actions-button .dx-button {
   min-width: 32px;
   height: 21px;
+}
+.dx-filemanager-file-actions-button .dx-button .dx-button-content {
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .dx-diagram {
   border-color: #ddd;
@@ -13571,6 +13607,9 @@
 .dx-diagram .dx-diagram-right-panel {
   border-left-color: #ddd;
 }
+.dx-diagram.dx-diagram-fullscreen {
+  background-color: #fff;
+}
 .dx-diagram-toolbar {
   background-color: transparent;
 }
@@ -13608,6 +13647,7 @@
 .dx-diagram-toolbar .dx-diagram-select-b .dx-dropdowneditor-field-template-wrapper .dx-icon,
 .dx-diagram-toolbar .dx-diagram-color-b .dx-dropdowneditor-field-template-wrapper .dx-icon {
   font-size: 18px;
+  color: #333;
 }
 .dx-diagram-toolbar .dx-diagram-color-b .dx-dropdowneditor-field-template-wrapper .dx-diagram-i,
 .dx-diagram-toolbar .dx-diagram-color-b .dx-dropdowneditor-field-template-wrapper .dx-icon {
@@ -13616,36 +13656,41 @@
 }
 .dx-diagram-i-connector-begin-none {
   background-image: url("data:image/svg+xml;charset=UTF-8,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0A%3Csvg%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%0A%09%20viewBox%3D%220%200%2032%2022%22%20style%3D%22enable-background%3Anew%200%200%2032%2022%3B%22%20xml%3Aspace%3D%22preserve%22%3E%0A%3Cpath%20d%3D%22M1%2C15l9-9l1%2C1l-9%2C9L1%2C15z%22%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20fill%3D%22%23FF0000%22%2F%3E%0A%3Cpath%20d%3D%22M12%2C10V5H0v12h12v-5h20v-2H12z%20M10%2C15H2V7h8V15z%22%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20fill%3D%22%23333%22%2F%3E%0A%3C%2Fsvg%3E%0A");
-  width: 32px;
-  height: 22px;
+  width: 26.28px;
+  height: 18px;
 }
 .dx-diagram-i-connector-begin-arrow {
   background-image: url("data:image/svg+xml;charset=UTF-8,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0A%3Csvg%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%0A%09%20viewBox%3D%220%200%2032%2022%22%20style%3D%22enable-background%3Anew%200%200%2032%2022%3B%22%20xml%3Aspace%3D%22preserve%22%3E%0A%3Cpath%20d%3D%22M12%2C12v4L0%2C11l12-5v4h20v2H12z%22%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20fill%3D%22%23333%22%2F%3E%0A%3C%2Fsvg%3E%0A");
-  width: 32px;
-  height: 22px;
+  width: 26.28px;
+  height: 18px;
 }
 .dx-diagram-i-connector-end-none {
   background-image: url("data:image/svg+xml;charset=UTF-8,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0A%3Csvg%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%0A%09%20viewBox%3D%220%200%2032%2022%22%20style%3D%22enable-background%3Anew%200%200%2032%2022%3B%22%20xml%3Aspace%3D%22preserve%22%3E%0A%3Cpath%20d%3D%22M21%2C15l9-9l1%2C1l-9%2C9L21%2C15z%22%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20fill%3D%22%23FF0000%22%2F%3E%0A%3Cpath%20d%3D%22M0%2C10l0%2C2h20v5h12V5H20v5H0z%20M22%2C7h8v8h-8V7z%22%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20fill%3D%22%23333%22%2F%3E%0A%3C%2Fsvg%3E%0A");
-  width: 32px;
-  height: 22px;
+  width: 26.28px;
+  height: 18px;
 }
 .dx-diagram-i-connector-end-arrow {
   background-image: url("data:image/svg+xml;charset=UTF-8,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0A%3Csvg%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%0A%09%20viewBox%3D%220%200%2032%2022%22%20style%3D%22enable-background%3Anew%200%200%2032%2022%3B%22%20xml%3Aspace%3D%22preserve%22%3E%0A%3Cpath%20d%3D%22M0%2C12l0-2h20V6l12%2C5l-12%2C5v-4H0z%22%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20fill%3D%22%23333%22%2F%3E%0A%3C%2Fsvg%3E%0A");
-  width: 32px;
-  height: 22px;
+  width: 26.28px;
+  height: 18px;
 }
 .dx-diagram-i-connector-orthogonal {
   background-image: url("data:image/svg+xml;charset=UTF-8,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0A%3Csvg%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%0A%09%20viewBox%3D%220%200%2032%2022%22%20style%3D%22enable-background%3Anew%200%200%2032%2022%3B%22%20xml%3Aspace%3D%22preserve%22%3E%0A%3Cpath%20d%3D%22M24%2C22v-8h3V5H8v3H0V0h8v3h19h2v2v9h3v8H24z%20M6%2C2H2v4h4V2z%20M30%2C16h-4v4h4V16z%22%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20fill%3D%22%23333%22%2F%3E%0A%3C%2Fsvg%3E%0A");
-  width: 32px;
-  height: 22px;
+  width: 26.28px;
+  height: 18px;
 }
 .dx-diagram-i-connector-straight {
   background-image: url("data:image/svg+xml;charset=UTF-8,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0A%3Csvg%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%0A%09%20viewBox%3D%220%200%2032%2022%22%20style%3D%22enable-background%3Anew%200%200%2032%2022%3B%22%20xml%3Aspace%3D%22preserve%22%3E%0A%3Cpath%20d%3D%22M24%2C14v2.2L8%2C2.8V0H0v8h8V5.8l16%2C13.3V22h8v-8H24z%20M6%2C6H2V2h4V6z%20M30%2C20h-4v-4h4V20z%22%20fill%3D%22%23333%22%2F%3E%0A%3C%2Fsvg%3E%0A");
-  width: 32px;
-  height: 22px;
+  width: 26.28px;
+  height: 18px;
 }
 .dx-diagram-i-button-fill {
-  background-image: url("data:image/svg+xml;charset=UTF-8,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0A%3Csvg%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%0A%09%20viewBox%3D%220%200%2018%2018%22%20style%3D%22enable-background%3Anew%200%200%2018%2018%3B%22%20xml%3Aspace%3D%22preserve%22%3E%0A%3Cpath%20d%3D%22M5%2C0L4%2C1l2%2C2L0%2C9l7%2C7l7-7L5%2C0z%20M2%2C9l5-5l5%2C5H2z%22%20fill%3D%22%23333%22%2F%3E%0A%3Cpath%20d%3D%22M15%2C10c0%2C0-3%2C3-3%2C5.5c0%2C0%2C0%2C0.1%2C0%2C0.1c0%2C1.3%2C1.3%2C2.4%2C3%2C2.4c1.7%2C0%2C3-1.1%2C3-2.4c0%2C0%2C0-0.1%2C0-0.1%0A%09C18%2C13%2C15%2C10%2C15%2C10z%20M13%2C15.5c0-2%2C2-4%2C2-4s0.7%2C0.7%2C1.3%2C1.7L13%2C15.5z%22%20fill%3D%22currentColor%22%2F%3E%0A%3C%2Fsvg%3E%0A");
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0A%3Csvg%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%0A%09%20viewBox%3D%220%200%2018%2018%22%20style%3D%22enable-background%3Anew%200%200%2018%2018%3B%22%20xml%3Aspace%3D%22preserve%22%3E%0A%3Cpath%20id%3D%22_x32_%22%20d%3D%22M7.6%2C1L6.7%2C1.9l1.9%2C1.9L3%2C9.4L9.5%2C16L16%2C9.4L7.6%2C1z%20M5%2C9l4.5-4.5L14%2C9H5z%22%20fill%3D%22%23333%22%20%2F%3E%0A%3C%2Fsvg%3E%0A%0A");
+  width: 18px;
+  height: 21px;
+}
+.dx-diagram-i-button-fullscreen {
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0A%3Csvg%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%0A%09%20viewBox%3D%220%200%2018%2018%22%20style%3D%22enable-background%3Anew%200%200%2018%2018%3B%22%20xml%3Aspace%3D%22preserve%22%3E%0A%3Cpolygon%20points%3D%220%2C6%202%2C6%202%2C2%206%2C2%206%2C0%200%2C0%22%20fill%3D%22%23333%22%2F%3E%0A%3Cpolygon%20points%3D%222%2C12%200%2C12%200%2C18%206%2C18%206%2C16%202%2C16%22%20fill%3D%22%23333%22%2F%3E%0A%3Cpolygon%20points%3D%2212%2C0%2012%2C2%2016%2C2%2016%2C6%2018%2C6%2018%2C0%22%20fill%3D%22%23333%22%2F%3E%0A%3Cpolygon%20points%3D%2216%2C16%2012%2C16%2012%2C18%2018%2C18%2018%2C12%2016%2C12%22%20fill%3D%22%23333%22%2F%3E%0A%3C%2Fsvg%3E%0A");
   width: 18px;
   height: 18px;
 }
