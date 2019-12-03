@@ -76,8 +76,6 @@ The **index.html** file contains the client-side configuration and consists of t
     <!-- ...-->
     <script>
         window.onload = function () {
-            showDemoPopup();
-
             // Adds required HTML resources to the DOM.
             DevExpress.Dashboard.ResourceManager.embedBundledResources();
 
