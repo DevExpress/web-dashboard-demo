@@ -13,14 +13,6 @@ function js() {
     .pipe(dest('./scripts'))
 }
 
-function devextremeCldr() {
-    return src([
-        './node_modules/devextreme-cldr-data/supplemental.js',
-        './node_modules/devextreme-cldr-data/en.js',
-    ])
-    .pipe(dest('./scripts/devextreme-cldr-data'))
-}
-
 function css() {
     return src([
         './node_modules/@devexpress/analytics-core/dist/css/dx-analytics.light.css',
@@ -39,5 +31,5 @@ function run() {
     connect.server();
 }
 
-exports.default = parallel(js, devextremeCldr, css, fonts);
+exports.default = parallel(js, css, fonts);
 exports.run = run;
