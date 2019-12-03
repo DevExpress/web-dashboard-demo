@@ -38,26 +38,26 @@ The **index.html** file contains the client-side configuration and consists of t
 	```html
 	<head>
 		<!-- Styles -->
-		<link href="node_modules/devextreme/dist/css/dx.common.css" rel="stylesheet" />
-		<link href="node_modules/devextreme/dist/css/dx.light.css" rel="stylesheet" />
-		<link href="node_modules/@devexpress/analytics-core/dist/css/dx-analytics.common.css" rel="stylesheet" />
-		<link href="node_modules/@devexpress/analytics-core/dist/css/dx-analytics.light.css" rel="stylesheet" />
-		<link href="node_modules/@devexpress/analytics-core/dist/css/dx-querybuilder.css" rel="stylesheet" />
-		<link href="node_modules/devexpress-dashboard/dist/css/dx-dashboard.light.min.css" rel="stylesheet" />
+		<link href="styles/dx.common.css" rel="stylesheet" />
+		<link href="styles/dx.light.css" rel="stylesheet" />
+		<link href="styles/dx-analytics.common.css" rel="stylesheet" />
+		<link href="styles/dx-analytics.light.css" rel="stylesheet" />
+		<link href="styles/dx-querybuilder.css" rel="stylesheet" />
+		<link href="styles/dx-dashboard.light.min.css" rel="stylesheet" />
 
 		<!-- 3rd-party dependencies -->
-		<script src="node_modules/jquery/dist/jquery.js"></script>
-		<script src="node_modules/jquery-ui-dist/jquery-ui.js"></script>
-		<script src="node_modules/knockout/build/output/knockout-latest.js"></script>
-		<script src="node_modules/ace-builds/src-min-noconflict/ace.js"></script>
-		<script src="node_modules/ace-builds/src-min-noconflict/ext-language_tools.js"></script>
-		<script src="node_modules/ace-builds/src-min-noconflict/theme-dreamweaver.js"></script>
-		<script src="node_modules/ace-builds/src-min-noconflict/theme-ambiance.js"></script>
+		<script src="scripts/jquery.min.js"></script>
+		<script src="scripts/jquery-ui.min.js"></script>
+		<script src="scripts/knockout-latest.js"></script>
+		<script src="scripts/ace/ace.js"></script>
+		<script src="scripts/ace/ext-language_tools.js"></script>
+		<script src="scripts/ace/theme-dreamweaver.js"></script>
+		<script src="scripts/ace/theme-ambiance.js"></script>
 
-		<script src="node_modules/devextreme/dist/js/dx.all.js"></script>
-		<script src="node_modules/@devexpress/analytics-core/dist/js/dx-analytics-core.min.js"></script>
-		<script src="node_modules/@devexpress/analytics-core/dist/js/dx-querybuilder.min.js"></script>
-		<script src="node_modules/devexpress-dashboard/dist/js/dx-dashboard.min.js"></script>
+		<script src="scripts/dx.all.js"></script>
+		<script src="scripts/dx-analytics-core.min.js"></script>
+		<script src="scripts/dx-querybuilder.min.js"></script>
+		<script src="scripts/dx-dashboard.min.js"></script>
 	</head>
 	```
 
