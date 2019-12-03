@@ -8,6 +8,7 @@
     <title>HTML JavaScript Web Dashboard Application | DevExpress</title>
     <link rel="icon" type="image/png" href="icons/favicon.ico" />
 
+    <!-- Styles -->
     <link href="styles/dx.common.css" rel="stylesheet" />
     <link href="styles/dx.light.css" rel="stylesheet" />
     <link href="styles/dx-analytics.common.css" rel="stylesheet" />
@@ -23,29 +24,18 @@
     <script src="scripts/ace/ext-language_tools.js"></script>
     <script src="scripts/ace/theme-dreamweaver.js"></script>
     <script src="scripts/ace/theme-ambiance.js"></script>
-    <script src="scripts/cldr/cldr.js"></script>
-    <script src="scripts/cldr/event.js"></script>
-    <script src="scripts/cldr/supplemental.js"></script>
-    <script src="scripts/cldr/unresolved.js"></script>
-    <script src="scripts/globalize/globalize.js"></script>
-    <script src="scripts/globalize/message.js"></script>
-    <script src="scripts/globalize/number.js"></script>
-    <script src="scripts/globalize/currency.js"></script>
-    <script src="scripts/globalize/date.js"></script>
-
-    <script src="scripts/devextreme-cldr-data/supplemental.js"></script>
-    <script src="scripts/devextreme-cldr-data/en.js"></script>
 
     <script src="scripts/dx.all.js"></script>
     <script src="scripts/dx-analytics-core.min.js"></script>
     <script src="scripts/dx-querybuilder.min.js"></script>
     <script src="scripts/dx-dashboard.min.js"></script>
 
+    <!-- Custom scripts and styles -->
     <link href="styles/styles.css" rel="stylesheet" />
     <script src="scripts/scripts.js"></script>
-    
+
     <script>
-        window.onload = function() {
+        window.onload = function () {
             showDemoPopup();
 
 
@@ -58,7 +48,7 @@
                 endpoint: "https://demos.devexpress.com/services/dashboard/api",
                 workingMode: "Viewer",
                 extensions: {
-                    "dashboard-panel": function(control) { return new DevExpress.Dashboard.DashboardPanelExtension(control); }
+                    "dashboard-panel": function (control) { return new DevExpress.Dashboard.DashboardPanelExtension(control); }
                 }
             });
 
@@ -85,8 +75,8 @@
             <h1>DevExpress Dashboard</h1>
             <p class="description">The following application demonstrates the DevExpress HTML JavaScript Web Dashboard that combines the JavaScript client-side with the ASP.NET MVC / Web API server-side.</p>
             
-            <p>Getting Started:<br><a href="https://docs.devexpress.com/Dashboard/119109/Getting-Started" target="_blank">https://docs.devexpress.com/Dashboard/119109/Getting-Started</a></p>
-            <p>HTML JavaScript Dashboard Control Documentation:<br><a href="https://docs.devexpress.com/Dashboard/119108/" target="_blank">https://docs.devexpress.com/Dashboard/119108/</a></p>
+            <p>Get Started:<br><a href="https://docs.devexpress.com/Dashboard/119109/Getting-Started" target="_blank">https://docs.devexpress.com/Dashboard/119109/Getting-Started</a></p>
+            <p>Documentation:<br><a href="https://docs.devexpress.com/Dashboard/119108/" target="_blank">https://docs.devexpress.com/Dashboard/119108/</a></p>
             <p>Source Code:<br><a href="https://github.com/DevExpress/web-dashboard-demo/" target="_blank">https://github.com/DevExpress/web-dashboard-demo</a></p>
         </div>
         <div class="logo">
