@@ -6,9 +6,7 @@
         "devexpress-dashboard": "19.2.4",
         "devextreme": "19.2.4",
         "@devexpress/analytics-core": "19.2.4",
-        "jquery-ui-dist": "^1.12.1",
-        "globalize": "^1.0.1",
-        "devextreme-cldr-data": "^1.0.2"
+        "jquery-ui-dist": "^1.12.1"
     },
     "devDependencies": {
         "gulp": "4.0.2",

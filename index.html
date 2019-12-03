@@ -8,44 +8,34 @@
     <title>HTML JavaScript Web Dashboard Application | DevExpress</title>
     <link rel="icon" type="image/png" href="icons/favicon.ico" />
 
-    <link href="styles/dx.common.css" rel="stylesheet" />
-    <link href="styles/dx.light.css" rel="stylesheet" />
-    <link href="styles/dx-analytics.common.css" rel="stylesheet" />
-    <link href="styles/dx-analytics.light.css" rel="stylesheet" />
-    <link href="styles/dx-querybuilder.css" rel="stylesheet" />
-    <link href="styles/dx-dashboard.light.min.css" rel="stylesheet" />
+    <!-- Styles -->
+    <link href="node_modules/devextreme/dist/css/dx.common.css" rel="stylesheet" />
+    <link href="node_modules/devextreme/dist/css/dx.light.css" rel="stylesheet" />
+    <link href="node_modules/@devexpress/analytics-core/dist/css/dx-analytics.common.css" rel="stylesheet" />
+    <link href="node_modules/@devexpress/analytics-core/dist/css/dx-analytics.light.css" rel="stylesheet" />
+    <link href="node_modules/@devexpress/analytics-core/dist/css/dx-querybuilder.css" rel="stylesheet" />
+    <link href="node_modules/devexpress-dashboard/dist/css/dx-dashboard.light.min.css" rel="stylesheet" />
 
     <!-- 3rd-party dependencies -->
-    <script src="scripts/jquery.min.js"></script>
-    <script src="scripts/jquery-ui.min.js"></script>
-    <script src="scripts/knockout-latest.js"></script>
-    <script src="scripts/ace/ace.js"></script>
-    <script src="scripts/ace/ext-language_tools.js"></script>
-    <script src="scripts/ace/theme-dreamweaver.js"></script>
-    <script src="scripts/ace/theme-ambiance.js"></script>
-    <script src="scripts/cldr/cldr.js"></script>
-    <script src="scripts/cldr/event.js"></script>
-    <script src="scripts/cldr/supplemental.js"></script>
-    <script src="scripts/cldr/unresolved.js"></script>
-    <script src="scripts/globalize/globalize.js"></script>
-    <script src="scripts/globalize/message.js"></script>
-    <script src="scripts/globalize/number.js"></script>
-    <script src="scripts/globalize/currency.js"></script>
-    <script src="scripts/globalize/date.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/jquery-ui-dist/jquery-ui.js"></script>
+    <script src="node_modules/knockout/build/output/knockout-latest.js"></script>
+    <script src="node_modules/ace-builds/src-min-noconflict/ace.js"></script>
+    <script src="node_modules/ace-builds/src-min-noconflict/ext-language_tools.js"></script>
+    <script src="node_modules/ace-builds/src-min-noconflict/theme-dreamweaver.js"></script>
+    <script src="node_modules/ace-builds/src-min-noconflict/theme-ambiance.js"></script>
 
-    <script src="scripts/devextreme-cldr-data/supplemental.js"></script>
-    <script src="scripts/devextreme-cldr-data/en.js"></script>
+    <script src="node_modules/devextreme/dist/js/dx.all.js"></script>
+    <script src="node_modules/@devexpress/analytics-core/dist/js/dx-analytics-core.min.js"></script>
+    <script src="node_modules/@devexpress/analytics-core/dist/js/dx-querybuilder.min.js"></script>
+    <script src="node_modules/devexpress-dashboard/dist/js/dx-dashboard.min.js"></script>
 
-    <script src="scripts/dx.all.js"></script>
-    <script src="scripts/dx-analytics-core.min.js"></script>
-    <script src="scripts/dx-querybuilder.min.js"></script>
-    <script src="scripts/dx-dashboard.min.js"></script>
-
+    <!-- Custom scripts and styles -->
     <link href="styles/styles.css" rel="stylesheet" />
     <script src="scripts/scripts.js"></script>
-    
+
     <script>
-        window.onload = function() {
+        window.onload = function () {
             showDemoPopup();
 
 
@@ -58,7 +48,7 @@
                 endpoint: "https://demos.devexpress.com/services/dashboard/api",
                 workingMode: "Viewer",
                 extensions: {
-                    "dashboard-panel": function(control) { return new DevExpress.Dashboard.DashboardPanelExtension(control); }
+                    "dashboard-panel": function (control) { return new DevExpress.Dashboard.DashboardPanelExtension(control); }
                 }
             });
 
@@ -67,12 +57,16 @@
         }
     </script>
     <!-- Google Tag Manager -->
-	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-	})(window,document,'script','dataLayer','GTM-TP4P4KW');</script>
-	<!-- End Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-TP4P4KW');</script>
+    <!-- End Google Tag Manager -->
 </head>
 <body>
     <div id="container" style="position: absolute; top: 0;left: 0; bottom: 0; right: 0;">
@@ -85,8 +79,8 @@
             <h1>DevExpress Dashboard</h1>
             <p class="description">The following application demonstrates the DevExpress HTML JavaScript Web Dashboard that combines the JavaScript client-side with the ASP.NET MVC / Web API server-side.</p>
             
-            <p>Getting Started:<br><a href="https://docs.devexpress.com/Dashboard/119109/Getting-Started" target="_blank">https://docs.devexpress.com/Dashboard/119109/Getting-Started</a></p>
-            <p>HTML JavaScript Dashboard Control Documentation:<br><a href="https://docs.devexpress.com/Dashboard/119108/" target="_blank">https://docs.devexpress.com/Dashboard/119108/</a></p>
+            <p>Get Started:<br><a href="https://docs.devexpress.com/Dashboard/119109/Getting-Started" target="_blank">https://docs.devexpress.com/Dashboard/119109/Getting-Started</a></p>
+            <p>Documentation:<br><a href="https://docs.devexpress.com/Dashboard/119108/" target="_blank">https://docs.devexpress.com/Dashboard/119108/</a></p>
             <p>Source Code:<br><a href="https://github.com/DevExpress/web-dashboard-demo/" target="_blank">https://github.com/DevExpress/web-dashboard-demo</a></p>
         </div>
         <div class="logo">
