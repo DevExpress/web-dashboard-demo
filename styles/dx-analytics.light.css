@@ -1,8 +1,8 @@
 /**
 * DevExpress HTML/JS Analytics Core (dx-analytics.light.css)
-* Version: 19.2.4
-* Build date: 2019-11-19
-* Copyright (c) 2012 - 2019 Developer Express Inc. ALL RIGHTS RESERVED
+* Version: 19.2.6
+* Build date: 2020-01-27
+* Copyright (c) 2012 - 2020 Developer Express Inc. ALL RIGHTS RESERVED
 * License: https://www.devexpress.com/Support/EULAs/NetComponents.xml
 */
 
@@ -186,6 +186,7 @@
 }
 .dx-filtereditor .dxd-filter-editor-text-color {
   color: #333333;
+  fill: #333333;
 }
 .dx-filtereditor .dxd-filter-editor-text-color.dxd-state-selected {
   color: #ffffff;

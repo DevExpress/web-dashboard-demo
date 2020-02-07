@@ -15,7 +15,9 @@ function js() {
 
 function css() {
     return src([
+        './node_modules/@devexpress/analytics-core/dist/css/dx-analytics.common.css',
         './node_modules/@devexpress/analytics-core/dist/css/dx-analytics.light.css',
+        './node_modules/@devexpress/analytics-core/dist/css/dx-querybuilder.css',
         './node_modules/devexpress-dashboard/dist/css/dx-dashboard.light.min.css',
         './node_modules/devextreme/dist/css/dx.common.css',
         './node_modules/devextreme/dist/css/dx.light.css',
