@@ -1,7 +1,7 @@
 /**
 * DevExtreme (dx.common.css)
-* Version: 19.2.6
-* Build date: Thu Jan 30 2020
+* Version: 20.1.3
+* Build date: Fri Apr 24 2020
 *
 * Copyright (c) 2012 - 2020 Developer Express Inc. ALL RIGHTS RESERVED
 * Read about DevExtreme licensing here: https://js.devexpress.com/Licensing/
@@ -438,7 +438,7 @@
 .dx-icon {
   background-position: 50% 50%;
 }
-.dx-svg-icon {
+.dx-svg-icon svg {
   pointer-events: none;
 }
 .dx-color-scheme {
@@ -495,11 +495,6 @@
 }
 .dx-sortable {
   overflow: hidden;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-touch-callout: none;
 }
 .dx-sortable-dragging.dx-sortable-clone {
   position: absolute;
@@ -716,6 +711,7 @@
 }
 .dx-button-content:after {
   display: inline-block;
+  position: relative;
   height: 100%;
   content: '';
   vertical-align: middle;
@@ -807,14 +803,14 @@
   height: 100%;
 }
 .dx-scrollable-native.dx-scrollable-vertical,
-.dx-scrollable-native.dx-scrollable-vertical .dx-scrollable-container {
+.dx-scrollable-native.dx-scrollable-vertical > .dx-scrollable-wrapper > .dx-scrollable-container {
   -ms-touch-action: pan-y;
   touch-action: pan-y;
   overflow-x: hidden;
   overflow-y: auto;
 }
 .dx-scrollable-native.dx-scrollable-horizontal,
-.dx-scrollable-native.dx-scrollable-horizontal .dx-scrollable-container {
+.dx-scrollable-native.dx-scrollable-horizontal > .dx-scrollable-wrapper > .dx-scrollable-container {
   -ms-touch-action: pan-x;
   touch-action: pan-x;
   float: none;
@@ -822,7 +818,7 @@
   overflow-y: hidden;
 }
 .dx-scrollable-native.dx-scrollable-both,
-.dx-scrollable-native.dx-scrollable-both .dx-scrollable-container {
+.dx-scrollable-native.dx-scrollable-both > .dx-scrollable-wrapper > .dx-scrollable-container {
   -ms-touch-action: pan-y pan-x;
   touch-action: pan-y pan-x;
   float: none;
@@ -2222,6 +2218,15 @@
 .dx-toolbar .dx-button-content:after {
   display: none;
 }
+.dx-toolbar.dx-toolbar-multiline .dx-toolbar-items-container {
+  height: 100%;
+}
+.dx-toolbar.dx-toolbar-multiline .dx-toolbar-items-container .dx-toolbar-before {
+  position: relative;
+}
+.dx-toolbar.dx-toolbar-multiline .dx-toolbar-item {
+  display: inline-block;
+}
 .dx-toolbar .dx-button .dx-icon {
   -webkit-box-sizing: content-box;
   box-sizing: content-box;
@@ -3183,15 +3188,19 @@
   border-right-width: 0;
 }
 .dx-dropdownbutton-action.dx-button .dx-button-content {
-  padding-right: 10px;
-  padding-left: 10px;
-}
-.dx-dropdownbutton-action:not(.dx-buttongroup-last-item).dx-button .dx-button-content {
   padding-left: 10px;
   padding-right: 4px;
 }
-.dx-rtl .dx-dropdownbutton-action:not(.dx-buttongroup-last-item).dx-button .dx-button-content {
+.dx-rtl .dx-dropdownbutton-action.dx-button .dx-button-content {
   padding-left: 4px;
+  padding-right: 10px;
+}
+.dx-dropdownbutton-action.dx-buttongroup-last-item.dx-button .dx-button-content {
+  padding-left: 10px;
+  padding-right: 0;
+}
+.dx-rtl .dx-dropdownbutton-action.dx-buttongroup-last-item.dx-button .dx-button-content {
+  padding-left: 0;
   padding-right: 10px;
 }
 .dx-dropdownbutton-action:not(.dx-buttongroup-last-item).dx-button {
@@ -3369,11 +3378,8 @@
   -webkit-touch-callout: none;
 }
 .dx-accordion-item-title .dx-icon {
-  width: 16px;
-  height: 16px;
   background-size: contain;
   display: inline-block;
-  margin-right: 5px;
 }
 .dx-accordion-item-title:before {
   content: '';
@@ -3563,13 +3569,13 @@
 }
 .dx-colorview-palette-gradient-white {
   background-repeat: no-repeat;
-  background-image: -webkit-gradient(linear,right top,left top,from(rgba(255,255,255,0)),to(rgba(255,255,255,1)));
-  background-image: linear-gradient(270deg,rgba(255,255,255,0),rgba(255,255,255,1));
+  background-image: -webkit-gradient(linear,right top,left top,from(rgba(255,255,255,0)),to(#fff));
+  background-image: linear-gradient(270deg,rgba(255,255,255,0),#fff);
 }
 .dx-colorview-palette-gradient-black {
   background-repeat: no-repeat;
-  background-image: -webkit-gradient(linear,left top,left bottom,from(rgba(0,0,0,0)),to(rgba(0,0,0,1)));
-  background-image: linear-gradient(180deg,rgba(0,0,0,0),rgba(0,0,0,1));
+  background-image: -webkit-gradient(linear,left top,left bottom,from(rgba(0,0,0,0)),to(#000));
+  background-image: linear-gradient(180deg,rgba(0,0,0,0),#000);
 }
 .dx-colorview-palette {
   position: relative;
@@ -4803,6 +4809,9 @@
 .dx-pivotgrid .dx-word-wrap .dx-pivotgrid-expanded > span,
 .dx-pivotgrid .dx-word-wrap .dx-pivotgrid-sorted > span {
   white-space: normal;
+}
+.dx-pivotgrid .dx-word-wrap .dx-pivotgrid-collapsed > span,
+.dx-pivotgrid .dx-word-wrap .dx-pivotgrid-expanded > span {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -5298,7 +5307,7 @@ input.dx-hidden {
 }
 .dx-editor-cell.dx-editor-inline-block .dx-highlight-outline::before {
   display: inline-block;
-  content: '\200B';
+  content: '\200b';
   vertical-align: middle;
   padding-top: 7px;
   padding-bottom: 7px;
@@ -6525,6 +6534,11 @@ input.dx-hidden {
 .dx-rtl .dx-scheduler-appointment-collector {
   margin: 3px 3px 0 0;
 }
+@media (max-width:450px) {
+  .dx-scheduler-adaptive .dx-scheduler-view-switcher-label {
+    display: none;
+  }
+}
 .dx-scheduler-adaptive .dx-scheduler-work-space-week .dx-scheduler-header-panel-cell {
   white-space: pre-wrap;
   line-height: 1.3;
@@ -6984,7 +6998,7 @@ input.dx-hidden {
   text-align: right;
   white-space: nowrap;
   width: 1.2em;
-  content: counter(list-0,decimal) '. ';
+  content: counter(list-0,decimal) ". ";
 }
 .dx-rtl .dx-htmleditor-content li {
   padding-left: 0;
@@ -6997,7 +7011,7 @@ input.dx-hidden {
   counter-increment: list-1;
 }
 .dx-htmleditor-content ol li.ql-indent-1::before {
-  content: counter(list-1,lower-alpha) '. ';
+  content: counter(list-1,lower-alpha) ". ";
 }
 .dx-htmleditor-content li.ql-indent-1 {
   counter-reset: list-2 list-3 list-4 list-5 list-6 list-7 list-8 list-9;
@@ -7007,7 +7021,7 @@ input.dx-hidden {
   counter-increment: list-2;
 }
 .dx-htmleditor-content ol li.ql-indent-2::before {
-  content: counter(list-2,lower-roman) '. ';
+  content: counter(list-2,lower-roman) ". ";
 }
 .dx-htmleditor-content li.ql-indent-2 {
   counter-reset: list-3 list-4 list-5 list-6 list-7 list-8 list-9;
@@ -7017,7 +7031,7 @@ input.dx-hidden {
   counter-increment: list-3;
 }
 .dx-htmleditor-content ol li.ql-indent-3::before {
-  content: counter(list-3,decimal) '. ';
+  content: counter(list-3,decimal) ". ";
 }
 .dx-htmleditor-content li.ql-indent-3 {
   counter-reset: list-4 list-5 list-6 list-7 list-8 list-9;
@@ -7027,7 +7041,7 @@ input.dx-hidden {
   counter-increment: list-4;
 }
 .dx-htmleditor-content ol li.ql-indent-4::before {
-  content: counter(list-4,lower-alpha) '. ';
+  content: counter(list-4,lower-alpha) ". ";
 }
 .dx-htmleditor-content li.ql-indent-4 {
   counter-reset: list-5 list-6 list-7 list-8 list-9;
@@ -7037,7 +7051,7 @@ input.dx-hidden {
   counter-increment: list-5;
 }
 .dx-htmleditor-content ol li.ql-indent-5::before {
-  content: counter(list-5,lower-roman) '. ';
+  content: counter(list-5,lower-roman) ". ";
 }
 .dx-htmleditor-content li.ql-indent-5 {
   counter-reset: list-6 list-7 list-8 list-9;
@@ -7047,7 +7061,7 @@ input.dx-hidden {
   counter-increment: list-6;
 }
 .dx-htmleditor-content ol li.ql-indent-6::before {
-  content: counter(list-6,decimal) '. ';
+  content: counter(list-6,decimal) ". ";
 }
 .dx-htmleditor-content li.ql-indent-6 {
   counter-reset: list-7 list-8 list-9;
@@ -7057,7 +7071,7 @@ input.dx-hidden {
   counter-increment: list-7;
 }
 .dx-htmleditor-content ol li.ql-indent-7::before {
-  content: counter(list-7,lower-alpha) '. ';
+  content: counter(list-7,lower-alpha) ". ";
 }
 .dx-htmleditor-content li.ql-indent-7 {
   counter-reset: list-8 list-9;
@@ -7067,7 +7081,7 @@ input.dx-hidden {
   counter-increment: list-8;
 }
 .dx-htmleditor-content ol li.ql-indent-8::before {
-  content: counter(list-8,lower-roman) '. ';
+  content: counter(list-8,lower-roman) ". ";
 }
 .dx-htmleditor-content li.ql-indent-8 {
   counter-reset: list-9;
@@ -7077,7 +7091,7 @@ input.dx-hidden {
   counter-increment: list-9;
 }
 .dx-htmleditor-content ol li.ql-indent-9::before {
-  content: counter(list-9,decimal) '. ';
+  content: counter(list-9,decimal) ". ";
 }
 .dx-htmleditor-content .ql-indent-1 {
   padding-left: 3em;
@@ -7270,7 +7284,6 @@ input.dx-hidden {
   border-bottom: 3px solid transparent;
 }
 .dx-htmleditor-toolbar-separator {
-  height: 100%;
   border-left: 1px solid transparent;
 }
 .dx-htmleditor-toolbar-menu-separator {
@@ -7353,19 +7366,19 @@ input.dx-hidden {
 }
 .dx-resize-frame .dx-resizable-handle-left::after,
 .dx-resize-frame .dx-resizable-handle-right::after {
-  top: calc(50% - 11px / 2);
+  top: calc(50% - 5.5px);
 }
 .dx-touch-device.dx-resize-frame .dx-resizable-handle-left::after,
 .dx-touch-device.dx-resize-frame .dx-resizable-handle-right::after {
-  top: calc(50% - 15px / 2);
+  top: calc(50% - 7.5px);
 }
 .dx-resize-frame .dx-resizable-handle-bottom::after,
 .dx-resize-frame .dx-resizable-handle-top::after {
-  left: calc(50% - 11px / 2);
+  left: calc(50% - 5.5px);
 }
 .dx-touch-device.dx-resize-frame .dx-resizable-handle-bottom::after,
 .dx-touch-device.dx-resize-frame .dx-resizable-handle-top::after {
-  left: calc(50% - 15px / 2);
+  left: calc(50% - 7.5px);
 }
 .dx-resize-frame .dx-resizable-handle-right::after {
   right: -5.5px;
@@ -7413,22 +7426,21 @@ input.dx-hidden {
   z-index: 998;
   top: 0;
 }
-.dx-splitter-wrapper.dx-splitter-initial {
-  right: 0;
-}
 .dx-splitter-wrapper .dx-splitter-border {
   z-index: 997;
   height: 100%;
-  display: table;
+  width: 7px;
+  cursor: col-resize;
 }
 .dx-splitter-wrapper .dx-splitter-border .dx-splitter {
   height: 100%;
-  width: 3px;
+  width: 1px;
   display: block;
   cursor: col-resize;
   z-index: 999;
+  margin: auto;
 }
-.dx-splitter-wrapper .dx-splitter-border .dx-splitter.dx-splitter-transparent {
+.dx-splitter-wrapper .dx-splitter-border .dx-splitter.dx-splitter-inactive {
   z-index: 998;
 }
 .dx-splitter-wrapper .dx-splitter-border .dx-splitter.dx-state-disabled {
@@ -7451,12 +7463,18 @@ input.dx-hidden {
   -ms-flex-direction: column;
   flex-direction: column;
 }
-.dx-filemanager .dx-filemanager-notification-drawer {
+.dx-filemanager .dx-filemanager-notification-drawer,
+.dx-filemanager .dx-filemanager-notification-drawer-panel {
   height: 100%;
 }
 .dx-filemanager .dx-filemanager-notification-popup > .dx-overlay-content {
-  min-width: 400px;
-  max-width: 400px;
+  min-width: 240px;
+  max-width: 93vw;
+}
+@media (min-width:431px) {
+  .dx-filemanager .dx-filemanager-notification-popup > .dx-overlay-content {
+    max-width: 400px;
+  }
 }
 .dx-filemanager .dx-filemanager-notification-popup .dx-popup-content {
   padding: 15px;
@@ -7472,12 +7490,16 @@ input.dx-hidden {
 .dx-filemanager .dx-filemanager-notification-popup .dx-filemanager-notification-common-no-item {
   border-style: none;
 }
+.dx-filemanager .dx-drawer-shrink .dx-filemanager-progress-panel {
+  border-left-width: 1px;
+  border-left-style: solid;
+}
 .dx-filemanager .dx-filemanager-progress-panel {
   width: 340px;
   height: 100%;
 }
 .dx-filemanager .dx-filemanager-progress-panel .dx-filemanager-progress-panel-container {
-  padding: 10px 10px 20px;
+  padding: 10px 20px 20px;
 }
 .dx-filemanager .dx-filemanager-progress-panel .dx-filemanager-progress-panel-title {
   display: -webkit-box;
@@ -7530,7 +7552,6 @@ input.dx-hidden {
   padding-right: 41px;
 }
 .dx-filemanager .dx-filemanager-progress-box .dx-filemanager-progress-box-image {
-  font-size: 30px;
   margin-right: 10px;
 }
 .dx-filemanager .dx-filemanager-progress-box .dx-filemanager-progress-box-wrapper {
@@ -7538,13 +7559,20 @@ input.dx-hidden {
   -webkit-flex: 1 auto;
   -ms-flex: 1 auto;
   flex: 1 auto;
+  overflow: hidden;
 }
-.dx-filemanager .dx-filemanager-progress-box .dx-filemanager-progress-box-common,
+.dx-filemanager .dx-filemanager-progress-box .dx-filemanager-progress-box-common {
+  padding: 5px 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
 .dx-filemanager .dx-filemanager-progress-box .dx-filemanager-progress-box-progress-bar,
 .dx-filemanager .dx-filemanager-progress-box .dx-filemanager-progress-box-status {
   padding: 5px 0;
 }
 .dx-filemanager .dx-filemanager-progress-box .dx-filemanager-progress-box-close-button {
+  margin-top: 9px;
   margin-left: 5px;
 }
 .dx-filemanager .dx-filemanager-progress-box-error {
@@ -7555,6 +7583,8 @@ input.dx-hidden {
   font-size: .85em;
   line-height: normal;
   word-wrap: break-word;
+  overflow-y: auto;
+  max-height: 150px;
 }
 .dx-filemanager .dx-filemanager-toolbar {
   padding: 6px 10px;
@@ -7562,6 +7592,9 @@ input.dx-hidden {
 .dx-filemanager .dx-filemanager-toolbar .dx-filemanager-toolbar-separator-item {
   width: 1px;
   margin-right: 5px;
+}
+.dx-filemanager .dx-splitter-wrapper.dx-splitter-initial {
+  right: 3.5px;
 }
 .dx-filemanager .dx-filemanager-container {
   display: -webkit-box;
@@ -7574,6 +7607,9 @@ input.dx-hidden {
   box-sizing: border-box;
   overflow: hidden;
 }
+.dx-filemanager .dx-filemanager-container .dx-filemanager-adaptivity-drawer-panel {
+  height: 100%;
+}
 .dx-filemanager .dx-filemanager-container .dx-filemanager-dirs-panel {
   padding: 5px 10px;
   height: 100%;
@@ -7582,6 +7618,9 @@ input.dx-hidden {
 }
 .dx-filemanager .dx-filemanager-container .dx-drawer-opened .dx-splitter.dx-state-disabled {
   width: 1px;
+}
+.dx-filemanager .dx-filemanager-container .dx-drawer-shrink .dx-drawer-panel-content {
+  overflow: visible;
 }
 .dx-filemanager .dx-filemanager-container .dx-drawer-panel-content {
   display: block;
@@ -7595,26 +7634,26 @@ input.dx-hidden {
   height: 100%;
 }
 .dx-filemanager .dx-filemanager-breadcrumbs {
-  padding: 6px 11px;
+  padding: 2px 11px;
   border-bottom: 1px solid;
 }
-.dx-filemanager .dx-filemanager-breadcrumbs .dx-menu-horizontal .dx-menu-item-wrapper {
-  vertical-align: middle;
-}
 .dx-filemanager .dx-filemanager-breadcrumbs .dx-menu-item-content {
-  padding: 5px 0 10px;
+  padding-left: 0;
+  padding-right: 0;
 }
 .dx-filemanager .dx-filemanager-breadcrumbs .dx-filemanager-breadcrumbs-parent-folder-item .dx-menu-item-content {
-  padding: 5px 9px 10px;
+  padding-left: 2px;
+  padding-right: 2px;
 }
 .dx-filemanager .dx-filemanager-breadcrumbs .dx-filemanager-breadcrumbs-separator-item .dx-menu-item-content {
   width: 1px;
-  height: 36px;
-  padding: 0;
+  padding-left: 0;
+  padding-right: 0;
   margin: 0 10px;
 }
 .dx-filemanager .dx-filemanager-breadcrumbs .dx-filemanager-breadcrumbs-path-separator-item .dx-menu-item-content {
-  padding: 5px 1px 10px;
+  padding-left: 1px;
+  padding-right: 1px;
 }
 .dx-filemanager .dx-filemanager-breadcrumbs .dx-filemanager-breadcrumbs-path-separator-item.dx-state-hover,
 .dx-filemanager .dx-filemanager-breadcrumbs .dx-filemanager-breadcrumbs-separator-item.dx-state-hover {
@@ -7630,8 +7669,9 @@ input.dx-hidden {
   float: right;
 }
 .dx-filemanager .dx-row .dx-filemanager-file-actions-button .dx-button-content {
-  padding: 10px 14px;
+  padding: 0;
 }
+.dx-filemanager .dx-row.dx-row-focused .dx-filemanager-file-actions-button,
 .dx-filemanager .dx-row.dx-selection .dx-filemanager-file-actions-button,
 .dx-filemanager .dx-row.dx-state-hover .dx-filemanager-file-actions-button {
   visibility: visible;
@@ -7687,9 +7727,6 @@ input.dx-hidden {
 }
 .dx-filemanager .dx-filemanager-thumbnails .dx-filemanager-thumbnails-view-port .dx-filemanager-thumbnails-item .dx-filemanager-thumbnails-item-content .dx-filemanager-thumbnails-item-thumbnail {
   border: 0;
-  width: 48px;
-  height: 48px;
-  font-size: 48px;
 }
 .dx-filemanager .dx-filemanager-thumbnails .dx-filemanager-thumbnails-view-port .dx-filemanager-thumbnails-item .dx-filemanager-thumbnails-item-content .dx-filemanager-thumbnails-item-spacer {
   border: 0;
@@ -7714,6 +7751,9 @@ input.dx-hidden {
 }
 .dx-filemanager .dx-filemanager-details > div {
   height: 100%;
+}
+.dx-filemanager .dx-filemanager-details .dx-datagrid-rowsview .dx-datagrid-table > tbody > tr.dx-filemanager-parent-directory-item > td > .dx-select-checkbox {
+  display: none;
 }
 .dx-filemanager .dx-filemanager-details .dx-filemanager-details-item-name-wrapper {
   display: -webkit-inline-box;
@@ -7805,10 +7845,6 @@ input.dx-hidden {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.dx-filemanager-dirs-tree .dx-filemanager-file-actions-button {
-  margin-top: 1px;
-  margin-bottom: -1px;
-}
 .dx-filemanager-dirs-tree .dx-filemanager-focused-item .dx-filemanager-file-actions-button,
 .dx-filemanager-dirs-tree .dx-treeview-item.dx-state-hover .dx-filemanager-file-actions-button {
   visibility: visible;
@@ -7827,7 +7863,8 @@ input.dx-hidden {
   min-height: 300px;
   max-height: 400px;
 }
-.dx-filemanager-dialog-name-editor-popup > .dx-overlay-content {
+.dx-filemanager-dialog-delete-item-popup>.dx-overlay-content,
+.dx-filemanager-dialog-name-editor-popup>.dx-overlay-content {
   max-width: 340px;
   min-height: 180px;
   max-height: 180px;
@@ -7857,7 +7894,8 @@ input.dx-hidden {
   -webkit-flex-flow: column;
   -ms-flex-flow: column;
   flex-flow: column;
-  height: 400px;
+  height: 600px;
+  min-height: 350px;
 }
 .dx-diagram .dx-diagram-toolbar-wrapper {
   padding: 5px;
@@ -7865,6 +7903,9 @@ input.dx-hidden {
   -webkit-flex-grow: 0;
   -ms-flex-positive: 0;
   flex-grow: 0;
+}
+.dx-diagram .dx-diagram-toolbar-wrapper .dx-diagram-toolbar {
+  background-color: transparent;
 }
 .dx-diagram .dx-diagram-content-wrapper {
   display: -webkit-box;
@@ -7880,53 +7921,10 @@ input.dx-hidden {
   flex-basis: 0;
   overflow: hidden;
 }
-.dx-diagram .dx-diagram-left-panel {
-  -webkit-box-flex: 240px;
-  -webkit-flex: 240px 0 0;
-  -ms-flex: 240px 0 0px;
-  flex: 240px 0 0;
-  overflow-y: auto;
-  position: relative;
-  border-right: 1px solid transparent;
-}
-.dx-diagram .dx-diagram-left-panel > * {
-  position: absolute;
-}
-.dx-diagram .dx-diagram-left-panel > .dx-scrollview {
-  width: 100%;
-}
-.dx-diagram .dx-diagram-drawer-wrapper {
-  -webkit-box-flex: 1;
-  -webkit-flex: 1 0;
-  -ms-flex: 1 0;
-  flex: 1 0;
-  overflow: hidden;
-  -webkit-flex-basis: 0;
-  -ms-flex-preferred-size: 0;
-  flex-basis: 0;
-}
-.dx-diagram .dx-diagram-content {
+.dx-diagram .dx-diagram-content,
+.dx-diagram .dx-diagram-scroll-view {
   height: 100%;
-}
-.dx-diagram .dx-diagram-right-panel {
-  border-left: 1px solid transparent;
-}
-.dx-diagram .dx-diagram-right-panel .dx-scrollview {
-  width: 280px;
-}
-.dx-diagram .dx-diagram-right-panel .dx-accordion {
   width: 100%;
-}
-.dx-diagram .dx-diagram-toolbar-separator {
-  height: 100%;
-  border-left: 1px solid transparent;
-}
-.dx-diagram .dx-diagram-toolbar-menu-separator {
-  width: 100%;
-  border-top: 1px solid transparent;
-}
-.dx-diagram .dx-diagram-toolbar-menu-separator::before {
-  content: none;
 }
 .dx-diagram.dx-diagram-fullscreen {
   left: 0;
@@ -7936,19 +7934,89 @@ input.dx-hidden {
   position: fixed;
   z-index: 2;
 }
+.dx-diagram .dxdi-control {
+  width: auto;
+  height: auto;
+  overflow: visible;
+}
 .dx-diagram .dxdi-canvas {
   overflow: hidden;
 }
-.dx-diagram-toolbar .dx-diagram-color-b .dx-texteditor,
-.dx-diagram-toolbar .dx-diagram-select-b .dx-texteditor,
-.dx-dropdownmenu-popup .dx-diagram-color-b .dx-texteditor,
-.dx-dropdownmenu-popup .dx-diagram-select-b .dx-texteditor {
-  width: auto;
+.dx-diagram-toolbox-popup.dx-popup-wrapper .dx-overlay-content {
+  border-radius: 0;
 }
-.dx-diagram-toolbar .dx-diagram-color-b .dx-dropdowneditor-field-template-wrapper,
-.dx-diagram-toolbar .dx-diagram-select-b .dx-dropdowneditor-field-template-wrapper,
-.dx-dropdownmenu-popup .dx-diagram-color-b .dx-dropdowneditor-field-template-wrapper,
-.dx-dropdownmenu-popup .dx-diagram-select-b .dx-dropdowneditor-field-template-wrapper {
+.dx-diagram-toolbox-popup .dx-popup-title.dx-toolbar {
+  padding: 0;
+  background-color: rgba(0,0,0,.05);
+}
+.dx-diagram-toolbox-popup .dx-popup-title .dx-button-content,
+.dx-diagram-toolbox-popup .dx-popup-title .dx-button.dx-button-has-icon:not(.dx-button-has-text) {
+  background-color: transparent;
+  border: 0;
+  border-radius: 0;
+  padding: 0;
+  min-width: 0;
+}
+.dx-diagram-toolbox-popup .dx-popup-title .dx-button:not(.dx-closebutton) {
+  cursor: inherit;
+  pointer-events: none;
+}
+.dx-diagram-toolbox-popup .dx-popup-content {
+  padding: 0;
+}
+.dx-diagram-toolbox-popup .dx-popup-content .dx-diagram-toolbox-input {
+  border-color: transparent;
+}
+.dx-diagram-toolbox-popup .dx-popup-content .dx-diagram-toolbox-input .dx-placeholder:before,
+.dx-diagram-toolbox-popup .dx-popup-content .dx-diagram-toolbox-input input {
+  min-height: 0;
+  font-size: .9em;
+}
+.dx-diagram-toolbox-popup .dx-popup-content .dx-diagram-toolbox-input .dx-button {
+  border: 0;
+  border-radius: 0;
+  min-height: 14px;
+}
+.dx-diagram-toolbox-popup .dx-popup-content .dx-diagram-toolbox-panel {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow-y: auto;
+}
+.dx-diagram-toolbox-popup .dx-popup-content .dx-diagram-toolbox-panel > * {
+  position: absolute;
+}
+.dx-diagram-properties-popup .dx-scrollview,
+.dx-diagram-toolbox-popup .dx-popup-content .dx-diagram-toolbox-panel>.dx-scrollview {
+  width: 100%;
+}
+.dx-diagram-properties-popup .dx-popup-content {
+  padding: 0;
+}
+.dx-diagram-properties-popup .dx-tabs {
+  border: 0;
+}
+.dx-diagram-properties-popup .dx-tabpanel .dx-multiview-wrapper {
+  border-left: 0;
+  border-right: 0;
+}
+.dx-diagram-properties-popup .dx-diagram-properties-panel-group-toolbar .dx-toolbar-items-container {
+  display: block;
+  height: auto;
+}
+.dx-diagram-properties-popup .dx-diagram-properties-panel-group-toolbar .dx-toolbar-items-container > div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  position: inherit;
+}
+.dx-diagram-properties-popup .dx-diagram-properties-panel-group-toolbar .dx-toolbar-items-container .dx-toolbar-item {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -7958,24 +8026,149 @@ input.dx-hidden {
   -ms-flex-align: center;
   align-items: center;
 }
-.dx-diagram-toolbar .dx-diagram-color-b .dx-dropdowneditor-field-template-wrapper .dx-diagram-i,
-.dx-diagram-toolbar .dx-diagram-select-b .dx-dropdowneditor-field-template-wrapper .dx-diagram-i,
-.dx-dropdownmenu-popup .dx-diagram-color-b .dx-dropdowneditor-field-template-wrapper .dx-diagram-i,
-.dx-dropdownmenu-popup .dx-diagram-select-b .dx-dropdowneditor-field-template-wrapper .dx-diagram-i {
+.dx-diagram-properties-popup:not(.dx-diagram-mobile-popup) .dx-tabpanel .dx-multiview-wrapper {
+  border-bottom: 0;
+}
+.dx-diagram-properties-popup.dx-diagram-mobile-popup {
+  width: calc(100% - 2px)!important;
+}
+.dx-diagram-properties-popup.dx-diagram-mobile-popup .dx-popup-title {
+  border: 0;
+  min-height: 0;
+  position: relative;
+  z-index: 1;
+}
+.dx-diagram-properties-popup.dx-diagram-mobile-popup .dx-toolbar .dx-toolbar-items-container {
+  height: auto;
+}
+.dx-diagram-properties-popup.dx-diagram-mobile-popup .dx-toolbar .dx-toolbar-items-container .dx-toolbar-item {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.dx-diagram-properties-popup.dx-diagram-mobile-popup .dx-tabpanel {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+  -webkit-flex-direction: column-reverse;
+  -ms-flex-direction: column-reverse;
+  flex-direction: column-reverse;
+}
+.dx-diagram-properties-popup.dx-diagram-mobile-popup .dx-tabpanel .dx-multiview-wrapper {
+  border-top: 0;
+}
+.dx-diagram-floating-toolbar-container {
+  position: absolute;
+  z-index: 1001;
+  width: 100%;
+  -webkit-transition: opacity .4s;
+  transition: opacity .4s;
+}
+.dx-diagram-floating-toolbar-container.dx-diagram-properties-panel-toolbar-container {
+  background: 0 0;
+  border-radius: 50%;
+  border: 0;
+  padding: 0;
+}
+.dx-diagram-floating-toolbar-container.dx-diagram-properties-panel-toolbar-container .dx-toolbar {
+  background: 0 0;
+}
+.dx-diagram-floating-toolbar-container.dx-diagram-properties-panel-toolbar-container div {
+  border-radius: 50%;
+}
+.dx-diagram-floating-toolbar-container .dx-diagram-toolbar .dx-toolbar-items-container > * {
+  padding-left: 0;
+  padding-right: 0;
+}
+.dx-diagram-toolbar .dx-diagram-toolbar-separator {
+  height: 100%;
+  border-left: 1px solid transparent;
+}
+.dx-diagram-toolbar .dx-diagram-toolbar-menu-separator {
+  width: 100%;
+  border-top: 1px solid transparent;
+}
+.dx-diagram-toolbar .dx-diagram-toolbar-menu-separator::before {
+  content: none;
+}
+.dx-diagram-toolbar .dx-diagram-color-edit-item .dx-texteditor,
+.dx-diagram-toolbar .dx-diagram-image-dropdown-item .dx-texteditor,
+.dx-dropdownmenu-popup .dx-diagram-color-edit-item .dx-texteditor,
+.dx-dropdownmenu-popup .dx-diagram-image-dropdown-item .dx-texteditor {
+  width: auto;
+}
+.dx-diagram-toolbar .dx-diagram-color-edit-item .dx-dropdowneditor-field-template-wrapper,
+.dx-diagram-toolbar .dx-diagram-image-dropdown-item .dx-dropdowneditor-field-template-wrapper,
+.dx-dropdownmenu-popup .dx-diagram-color-edit-item .dx-dropdowneditor-field-template-wrapper,
+.dx-dropdownmenu-popup .dx-diagram-image-dropdown-item .dx-dropdowneditor-field-template-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.dx-diagram-toolbar .dx-diagram-color-edit-item .dx-dropdowneditor-field-template-wrapper .dx-diagram-i,
+.dx-diagram-toolbar .dx-diagram-image-dropdown-item .dx-dropdowneditor-field-template-wrapper .dx-diagram-i,
+.dx-dropdownmenu-popup .dx-diagram-color-edit-item .dx-dropdowneditor-field-template-wrapper .dx-diagram-i,
+.dx-dropdownmenu-popup .dx-diagram-image-dropdown-item .dx-dropdowneditor-field-template-wrapper .dx-diagram-i {
   display: block;
 }
-.dx-diagram-toolbar .dx-diagram-color-b .dx-dropdowneditor-field-template-wrapper .dx-textbox,
-.dx-diagram-toolbar .dx-diagram-select-b .dx-dropdowneditor-field-template-wrapper .dx-textbox,
-.dx-dropdownmenu-popup .dx-diagram-color-b .dx-dropdowneditor-field-template-wrapper .dx-textbox,
-.dx-dropdownmenu-popup .dx-diagram-select-b .dx-dropdowneditor-field-template-wrapper .dx-textbox {
+.dx-diagram-toolbar .dx-diagram-color-edit-item .dx-dropdowneditor-field-template-wrapper .dx-textbox,
+.dx-diagram-toolbar .dx-diagram-image-dropdown-item .dx-dropdowneditor-field-template-wrapper .dx-textbox,
+.dx-dropdownmenu-popup .dx-diagram-color-edit-item .dx-dropdowneditor-field-template-wrapper .dx-textbox,
+.dx-dropdownmenu-popup .dx-diagram-image-dropdown-item .dx-dropdowneditor-field-template-wrapper .dx-textbox {
   width: 0;
 }
-.dx-diagram-toolbar .dx-diagram-color-b .dx-dropdowneditor-field-template-wrapper .dx-textbox .dx-texteditor-input,
-.dx-diagram-toolbar .dx-diagram-select-b .dx-dropdowneditor-field-template-wrapper .dx-textbox .dx-texteditor-input,
-.dx-dropdownmenu-popup .dx-diagram-color-b .dx-dropdowneditor-field-template-wrapper .dx-textbox .dx-texteditor-input,
-.dx-dropdownmenu-popup .dx-diagram-select-b .dx-dropdowneditor-field-template-wrapper .dx-textbox .dx-texteditor-input {
+.dx-diagram-toolbar .dx-diagram-color-edit-item .dx-dropdowneditor-field-template-wrapper .dx-textbox .dx-texteditor-input,
+.dx-diagram-toolbar .dx-diagram-image-dropdown-item .dx-dropdowneditor-field-template-wrapper .dx-textbox .dx-texteditor-input,
+.dx-dropdownmenu-popup .dx-diagram-color-edit-item .dx-dropdowneditor-field-template-wrapper .dx-textbox .dx-texteditor-input,
+.dx-dropdownmenu-popup .dx-diagram-image-dropdown-item .dx-dropdowneditor-field-template-wrapper .dx-textbox .dx-texteditor-input {
   width: 0;
   padding-left: 0;
+}
+.dx-diagram-mobile-toolbar-color-box-opened .dx-dropdowneditor-overlay {
+  -webkit-transform: none!important;
+  transform: none!important;
+  width: 100%!important;
+  height: 100%!important;
+}
+.dx-diagram-mobile-toolbar-color-box-opened .dx-dropdowneditor-overlay .dx-overlay-content {
+  -webkit-transform: none!important;
+  transform: none!important;
+  width: 100%!important;
+  top: initial!important;
+  bottom: 0!important;
+}
+.dx-diagram-mobile-toolbar-color-box-opened .dx-dropdowneditor-overlay .dx-overlay-content .dx-popup-content {
+  padding: 8px;
+}
+.dx-diagram-mobile-toolbar-color-box-opened .dx-dropdowneditor-overlay .dx-overlay-content .dx-colorview-container {
+  width: 100%;
+}
+.dx-diagram-mobile-toolbar-color-box-opened .dx-dropdowneditor-overlay .dx-overlay-content .dx-colorview-container .dx-colorview-container-row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.dx-diagram-mobile-toolbar-color-box-opened .dx-dropdowneditor-overlay .dx-overlay-content .dx-colorview-container .dx-colorview-container-row .dx-colorview-palette-cell {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+.dx-diagram-mobile-toolbar-color-box-opened .dx-dropdowneditor-overlay .dx-overlay-content .dx-colorview-container .dx-colorview-container-row .dx-colorview-palette-cell .dx-colorview-palette {
+  width: 100%;
+  min-width: 300px;
+}
+.dx-diagram-mobile-toolbar-color-box-opened .dx-dropdowneditor-overlay .dx-overlay-content .dx-colorview-container .dx-colorview-container-row .dx-colorview-controls-container,
+.dx-diagram-mobile-toolbar-color-box-opened .dx-dropdowneditor-overlay .dx-overlay-content .dx-colorview-container .dx-colorview-container-row .dx-colorview-hue-scale-cell {
+  margin-left: 12px;
 }
 .dx-diagram-i {
   background-repeat: no-repeat;
@@ -7988,6 +8181,10 @@ input.dx-hidden {
   left: calc(50% - 32px);
   width: 64px;
   height: 64px;
+}
+.dx-diagram-touch-context-toolbox .dx-popover-wrapper,
+.dx-diagram-touchbar-overlay {
+  z-index: 1!important;
 }
 .dx-diagram-touchbar.dx-context-menu .dx-menu-items-container {
   display: block;
@@ -8009,17 +8206,51 @@ input.dx-hidden {
 .dx-diagram-touchbar.dx-context-menu .dx-menu-item .dx-menu-item-content .dx-menu-item-text {
   display: none;
 }
+.dx-diagram-context-toolbox-target,
 .dx-diagram-touchbar-target {
   position: absolute;
   background-color: transparent;
   pointer-events: none;
+}
+.dx-diagram-context-toolbox-target {
+  width: 1px;
+  height: 1px;
+}
+.dx-diagram-context-toolbox .dx-popup-content {
+  padding: 8px;
+}
+.dx-diagram-context-toolbox-content {
+  width: 152px;
 }
 .dx-gantt {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   position: relative;
+  width: 100%;
+}
+.dx-gantt .dx-gantt-main-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  height: 100%;
+}
+.dx-gantt .dx-gantt-toolbar-separator {
+  height: 100%;
+  border-left: 1px solid transparent;
 }
 .dx-gantt .dx-gantt-si {
   text-align: center;
@@ -8046,6 +8277,7 @@ input.dx-hidden {
   -ms-user-select: none;
   user-select: none;
   width: 100%;
+  min-width: 1px;
 }
 .dx-gantt .dx-gantt-view .dx-gantt-tac-hb {
   margin-top: -1px;

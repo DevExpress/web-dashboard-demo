@@ -1,7 +1,7 @@
 /**
 * DevExpress HTML/JS Query Builder (dx-querybuilder.css)
-* Version: 19.2.6
-* Build date: 2020-01-27
+* Version: 20.1.3
+* Build date: 2020-04-23
 * Copyright (c) 2012 - 2020 Developer Express Inc. ALL RIGHTS RESERVED
 * License: https://www.devexpress.com/Support/EULAs/NetComponents.xml
 */
@@ -835,7 +835,7 @@
   left: 0px;
   right: 50px;
 }
-.dx-fullscreen-wizard * {
+.dx-designer .dx-fullscreen-wizard * {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
 }
@@ -853,12 +853,13 @@
   text-transform: uppercase;
   height: 65px;
   line-height: 65px;
-}
-.dx-rtl.dx-fullscreen-wizard .dxrd-wizard .dxrd-wizard-title {
   padding-right: 21px;
-}
-.dx-ltr.dx-fullscreen-wizard .dxrd-wizard .dxrd-wizard-title {
   padding-left: 21px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -ms-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
 }
 .dx-fullscreen-wizard .dxrd-wizard .dxrd-disabled {
   opacity: 0.3;
@@ -877,6 +878,22 @@
   position: absolute;
   width: 100%;
   height: 20px;
+}
+.dx-fullscreen-wizard .dxrd-wizard .dxrd-report-page-tile .dx-list .dx-list-search,
+.dx-fullscreen-wizard .dxrd-wizard .dxrd-report-page-tile .dx-list-with-search .dx-list-search {
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  height: 36px;
+  border-color: inherit;
+  border-radius: 0;
+  margin-bottom: 0;
+}
+.dx-fullscreen-wizard .dxrd-wizard .dxrd-report-page-tile .dx-list.dx-state-focused,
+.dx-fullscreen-wizard .dxrd-wizard .dxrd-report-page-tile .dx-list-with-search.dx-state-focused,
+.dx-fullscreen-wizard .dxrd-wizard .dxrd-report-page-tile .dx-list.dx-state-hover,
+.dx-fullscreen-wizard .dxrd-wizard .dxrd-report-page-tile .dx-list-with-search.dx-state-hover {
+  border-color: inherit;
 }
 .dx-fullscreen-wizard .dxrd-wizard .dxrd-report-page-tile .dxrd-report-page-tile-content {
   position: absolute;
@@ -1176,6 +1193,16 @@
 .dxrd-wizard .dxrd-wizard-content .dxrd-wizard-page.dx-jsonsource-page .dx-jsonwizard-parameter {
   position: absolute;
 }
+.dxrd-wizard .dxrd-wizard-content .dxrd-wizard-page.dx-jsonsource-page .dx-texteditor {
+  height: 36px;
+}
+.dxrd-wizard .dxrd-wizard-content .dxrd-wizard-page.dx-jsonsource-page .dx-texteditor .dx-texteditor-input {
+  font-size: 14px;
+}
+.dxrd-wizard .dxrd-wizard-content .dxrd-wizard-page.dx-jsonsource-page .dx-texteditor .dx-placeholder {
+  font-size: 14px;
+  margin-top: 0px;
+}
 .dxrd-wizard .dxrd-wizard-content .dxrd-wizard-page.dx-jsonsource-page .dx-field {
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1196,12 +1223,15 @@
 .dxrd-wizard .dxrd-wizard-content .dxrd-wizard-page.dx-jsonsource-page .dx-collectioneditor .dx-collectioneditor-items .dx-collectioneditor-item-container {
   height: 44px;
 }
+.dxrd-wizard .dxrd-wizard-content .dxrd-wizard-page.dx-jsonsource-page .dx-collectioneditor .dx-collectioneditor-items .dx-collectioneditor-item-container .dx-field {
+  display: flex;
+}
 .dxrd-wizard .dxrd-wizard-content .dxrd-wizard-page.dx-jsonsource-page .dx-jsonwizard-parameter-container {
-  width: 50%;
+  width: 33%;
   position: relative;
 }
 .dxrd-wizard .dxrd-wizard-content .dxrd-wizard-page.dx-jsonsource-page .dx-jsonwizard-parameter-left-container {
-  width: 50%;
+  width: 33%;
   position: relative;
   float: left;
 }
@@ -1209,8 +1239,17 @@
   left: 16px;
   right: 2px;
 }
+.dxrd-wizard .dxrd-wizard-content .dxrd-wizard-page.dx-jsonsource-page .dx-jsonwizard-parameter-middle-container {
+  width: 33%;
+  position: relative;
+  float: left;
+}
+.dxrd-wizard .dxrd-wizard-content .dxrd-wizard-page.dx-jsonsource-page .dx-jsonwizard-parameter-middle-container .dx-jsonwizard-parameter {
+  left: 2px;
+  right: 2px;
+}
 .dxrd-wizard .dxrd-wizard-content .dxrd-wizard-page.dx-jsonsource-page .dx-jsonwizard-parameter-right-container {
-  width: 50%;
+  width: 33%;
   position: relative;
   float: right;
 }
@@ -1254,6 +1293,22 @@
 .dxrd-wizard .dxrd-wizard-content .dxrd-wizard-page .dxrd-wizard-list .dx-list-item-before-bag {
   display: none;
 }
+.dxrd-wizard .dxrd-wizard-content .dxrd-wizard-page .dx-list .dx-list-search,
+.dxrd-wizard .dxrd-wizard-content .dxrd-wizard-page .dx-list-with-search .dx-list-search {
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  height: 36px;
+  border-color: inherit;
+  border-radius: 0;
+  margin-bottom: 0;
+}
+.dxrd-wizard .dxrd-wizard-content .dxrd-wizard-page .dx-list.dx-state-focused,
+.dxrd-wizard .dxrd-wizard-content .dxrd-wizard-page .dx-list-with-search.dx-state-focused,
+.dxrd-wizard .dxrd-wizard-content .dxrd-wizard-page .dx-list.dx-state-hover,
+.dxrd-wizard .dxrd-wizard-content .dxrd-wizard-page .dx-list-with-search.dx-state-hover {
+  border-color: inherit;
+}
 .dxrd-wizard .dxrd-wizard-content .dxrd-wizard-page .dxrd-wizard-list-title {
   margin-bottom: 10px;
 }
@@ -1289,6 +1344,52 @@
 .dxrd-sqldatasource-wizard.dxrd-wizard .dxrd-wizard-content .dxrd-wizard-page.dx-frameless-style .dx-item-content.dx-list-item-content {
   padding: 10px 20px;
 }
+.dxrd-wizard .dxrd-wizard-content .dx-objectdatasource-types-page,
+.dxrd-wizard .dxrd-wizard-content .dx-objectdatasource-datamembers-page {
+  height: 100%;
+}
+.dxrd-wizard .dxrd-wizard-content .dx-objectdatasource-types-page .dxa-no-data-message,
+.dxrd-wizard .dxrd-wizard-content .dx-objectdatasource-datamembers-page .dxa-no-data-message {
+  text-align: center;
+  position: absolute;
+  top: 100px;
+  width: 100%;
+}
+.dxrd-wizard .dxrd-wizard-content .dx-objectdatasource-types-page .dxrd-treelist-search-panel,
+.dxrd-wizard .dxrd-wizard-content .dx-objectdatasource-datamembers-page .dxrd-treelist-search-panel,
+.dxrd-wizard .dxrd-wizard-content .dx-objectdatasource-types-page .dx-list-search,
+.dxrd-wizard .dxrd-wizard-content .dx-objectdatasource-datamembers-page .dx-list-search {
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  height: 36px;
+  border-color: inherit;
+  border-radius: 0;
+  margin-bottom: 0;
+}
+.dxrd-wizard .dxrd-wizard-content .dx-objectdatasource-types-page .dxrd-treelist-search-panel .dx-texteditor-input,
+.dxrd-wizard .dxrd-wizard-content .dx-objectdatasource-datamembers-page .dxrd-treelist-search-panel .dx-texteditor-input,
+.dxrd-wizard .dxrd-wizard-content .dx-objectdatasource-types-page .dx-list-search .dx-texteditor-input,
+.dxrd-wizard .dxrd-wizard-content .dx-objectdatasource-datamembers-page .dx-list-search .dx-texteditor-input {
+  font-size: 14px;
+}
+.dxrd-wizard .dxrd-wizard-content .dx-objectdatasource-types-page .dxrd-treelist-search-panel .dx-placeholder,
+.dxrd-wizard .dxrd-wizard-content .dx-objectdatasource-datamembers-page .dxrd-treelist-search-panel .dx-placeholder,
+.dxrd-wizard .dxrd-wizard-content .dx-objectdatasource-types-page .dx-list-search .dx-placeholder,
+.dxrd-wizard .dxrd-wizard-content .dx-objectdatasource-datamembers-page .dx-list-search .dx-placeholder {
+  font-size: 14px;
+  margin-top: 0px;
+}
+.dxrd-wizard .dxrd-wizard-content .dx-objectdatasource-types-page .dxrd-treelist-search-panel.dx-state-focused,
+.dxrd-wizard .dxrd-wizard-content .dx-objectdatasource-datamembers-page .dxrd-treelist-search-panel.dx-state-focused,
+.dxrd-wizard .dxrd-wizard-content .dx-objectdatasource-types-page .dx-list-search.dx-state-focused,
+.dxrd-wizard .dxrd-wizard-content .dx-objectdatasource-datamembers-page .dx-list-search.dx-state-focused,
+.dxrd-wizard .dxrd-wizard-content .dx-objectdatasource-types-page .dxrd-treelist-search-panel.dx-state-hover,
+.dxrd-wizard .dxrd-wizard-content .dx-objectdatasource-datamembers-page .dxrd-treelist-search-panel.dx-state-hover,
+.dxrd-wizard .dxrd-wizard-content .dx-objectdatasource-types-page .dx-list-search.dx-state-hover,
+.dxrd-wizard .dxrd-wizard-content .dx-objectdatasource-datamembers-page .dx-list-search.dx-state-hover {
+  border-color: inherit;
+}
 .dxrd-wizard .dxrd-wizard-content .dx-objectdatasource-parameters-datamembers-section {
   height: 100%;
 }
@@ -1298,10 +1399,10 @@
   border-left: none;
   height: 36px;
   border-color: inherit;
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
   border-radius: 0;
   margin-bottom: 0;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
 }
 .dxrd-wizard .dxrd-wizard-content .dx-objectdatasource-parameters-datamembers-section .dx-list-search .dx-texteditor-input {
   font-size: 14px;
@@ -1319,19 +1420,6 @@
 }
 .dxrd-wizard .dxrd-wizard-content .dx-objectdatasource-parameters-section .dxrd-properties-wrapper {
   overflow: visible;
-}
-.dxrd-wizard .dxrd-wizard-content .dx-objectdatasource-parameters-section .dxrd-properties-wrapper .dxrd-editormenu-box {
-  top: 0px;
-  width: 36px;
-  height: 36px;
-}
-.dxrd-wizard .dxrd-wizard-content .dx-objectdatasource-parameters-section .dxrd-properties-wrapper .dxrd-editormenu-box .dx-icon {
-  width: 16px;
-  height: 16px;
-}
-.dxrd-wizard .dxrd-wizard-content .dx-objectdatasource-parameters-section .dxrd-properties-wrapper .dxrd-editormenu-box .dx-icon svg {
-  width: 16px;
-  height: 16px;
 }
 .dxrd-wizard .dxrd-wizard-content .dx-objectdatasource-parameters-section .dx-fieldset .dx-field .dx-field-label {
   font-size: 14px;
@@ -1352,6 +1440,19 @@
 .dxrd-wizard .dxrd-wizard-content .dx-objectdatasource-parameters-section .dx-fieldset .dx-field.dxd-back-primary .dx-field-label {
   font-weight: bold;
   width: 100%;
+}
+.dxrd-wizard .dxrd-wizard-content .dxrd-editormenu-box {
+  top: 0px;
+  width: 36px;
+  height: 36px;
+}
+.dxrd-wizard .dxrd-wizard-content .dxrd-editormenu-box .dx-icon {
+  width: 16px;
+  height: 16px;
+}
+.dxrd-wizard .dxrd-wizard-content .dxrd-editormenu-box .dx-icon svg {
+  width: 16px;
+  height: 16px;
 }
 .dxrd-wizard .dxrd-wizard-content .dxrd-wizard-add-queries-page .dx-treelist-item .dx-treelist-caption .dx-treelist-action-container,
 .dxrd-wizard .dxrd-wizard-content .dxrd-configure-query-parameters-page .dx-treelist-item .dx-treelist-caption .dx-treelist-action-container {
@@ -1457,21 +1558,21 @@
 .dxrd-wizard .dxrd-wizard-content .dxrd-wizard-type-page .dxrd-wizard-type-item {
   border-width: 1px;
   border-style: solid;
-  width: 158px;
-  height: 190px;
+  width: 120px;
+  height: 150px;
   display: inline-block;
-  margin: 0 15px;
+  margin: 0 10px;
   cursor: pointer;
 }
 .dxrd-wizard .dxrd-wizard-content .dxrd-wizard-type-page .dxrd-wizard-type-item .dxrd-wizard-type-image {
-  width: 128px;
-  height: 128px;
+  width: 96px;
+  height: 96px;
   margin: 15px auto 8px;
   position: relative;
 }
 .dxrd-wizard .dxrd-wizard-content .dxrd-wizard-type-page .dxrd-wizard-type-item .dxrd-wizard-type-image svg {
-  width: 128px;
-  height: 128px;
+  width: 96px;
+  height: 96px;
   position: absolute;
   top: 50%;
   left: 50%;
