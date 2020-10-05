@@ -1,0 +1,35 @@
+<dx-popup
+    [(visible)]="visible"
+    [closeOnOutsideClick] = "true"
+    [dragEnabled] = "false"
+    [showTitle] = "false"
+    [width] = "573"
+    [height] = "popupHeight()"
+    class='demo-popup'
+>
+    <dxo-position
+        my="right"
+        at="right"
+        [of]="nativeWindow">
+    </dxo-position>
+    <dxo-animation [hide]="{ type: 'pop', duration: 300, to: { opacity: 0, scale: 0.55 }, from: { opacity: 1, scale: 1 } }"></dxo-animation>
+    <div *dxTemplate="let data of 'content'">
+        <div class="closeButton">
+            <img src="assets/close-button.svg" (click)="hideDemoPopup()" />
+        </div>
+        <div class="dx-dashboard-typography">
+            <h1>DevExpress Dashboard</h1>
+            <p class="description">The following application demonstrates the DevExpress HTML JavaScript Web Dashboard that combines the JavaScript client-side with the ASP.NET MVC / Web API server-side.</p>
+            
+            <p>Get Started:<br><a href="https://docs.devexpress.com/Dashboard/119109/Getting-Started" target="_blank">https://docs.devexpress.com/Dashboard/119109/Getting-Started</a></p>
+            <p>Documentation:<br><a href="https://docs.devexpress.com/Dashboard/119108/" target="_blank">https://docs.devexpress.com/Dashboard/119108/</a></p>
+            <p>Source Code:<br><a href="https://github.com/DevExpress/web-dashboard-demo/" target="_blank">https://github.com/DevExpress/web-dashboard-demo</a></p>
+        </div>
+        <div class="logo">
+            <a href="https://www.devexpress.com" target="_blank">
+                <img src="assets/devexpress-logo.svg" />
+            </a>
+        </div>
+    </div>
+</dx-popup>
+
