@@ -1,6 +1,12 @@
-# Dashboard Angular Application
+# Web Dashboard Application on Angular
 
-This is an Angular application that contains the DevExpress Web Dashboard Angular component. 
+The following application contains the DevExpress Dashboard Component for Angular. The client side is hosted on the GitHub Pages and gets data from the server side that hosts on DevExpress.com.
+
+**Demo:** https://devexpress.github.io/web-dashboard-demo/
+
+
+![demo-image-main](images/demo-image-main.png)
+
 
 The Web Dashboard can be rendered on the client side, with data supplied by an ASP.NET Core / ASP.NET MVC backend. This allows you to do the following:
 
@@ -8,13 +14,7 @@ The Web Dashboard can be rendered on the client side, with data supplied by an A
 - Integrate the Web Dashboard into anything that supports HTTP requests (e.g., websites, web applications). See the following demo for details: [DevExpress Dashboard Demo](https://devexpress.github.io/web-dashboard-demo/)).
 - Use the Web Dashboard with [DevExtreme](https://js.devexpress.com) client-side widgets to create responsive web apps.
 
-In the following demo, the Dashboard Angular application is hosted on [GitHub](https://pages.github.com) and the server side is hosted on [DevExpress.com](https://www.devexpress.com).
-
-**Demo:** https://devexpress.github.io/web-dashboard-demo-preview/
-
-![html-dashboard-demo](https://user-images.githubusercontent.com/17986517/35871357-13796742-0b75-11e8-9b12-a90de4813b96.png)
-
-> Although Web Dashboard components are available for both [Angular](https://docs.devexpress.com/Dashboard/400409) and [React](https://docs.devexpress.com/Dashboard/400683), you can also create an [HTML JavaScript Web Dashboard](https://github.com/devexpress/web-dashboard-demo) application.
+> Web Dashboard components are available for both [Angular](https://docs.devexpress.com/Dashboard/400409) and [React](https://docs.devexpress.com/Dashboard/400683), but you can also create a [JavaScript Web Dashboard](https://github.com/devexpress/web-dashboard-demo) application.
 
 
 ## Demo Structure
@@ -41,7 +41,7 @@ The client part is an Angular application, where the `DxDashboardControlModule` 
 
   Contains the application logic.
   
- The server side of this project is an ASP.NET Core application hosted on DevExpress.com.
+ The server side of this project is an ASP.NET Core application hosted on DevExpress.com (`https://demos.devexpress.com/services/dashboard/api`).
   
  ## Documentation
 
