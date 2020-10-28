@@ -1,5 +1,5 @@
 {
-  "name": "web-dashboard-demo-preview",
+  "name": "web-dashboard-demo",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
