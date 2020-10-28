@@ -7,7 +7,7 @@ import { DashboardControlArgs, DashboardPanelExtension } from 'devexpress-dashbo
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'web-dashboard-demo-preview';
+  title = 'web-dashboard-demo';
 
 
   onBeforeRender(args: DashboardControlArgs) {
