@@ -20,7 +20,7 @@
     "@angular/platform-browser-dynamic": "~10.0.9",
     "@angular/router": "~10.0.9",
     "@devexpress/analytics-core": "~20.2.3",
-    "devexpress-dashboard": "~20.2.3",
+    "devexpress-dashboard": "20.2.4-build-20311-1755",
     "devexpress-dashboard-angular": "~20.2.3",
     "devextreme": "~20.2.3",
     "devextreme-angular": "~20.2.3",
