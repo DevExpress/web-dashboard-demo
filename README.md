@@ -14,8 +14,7 @@ The Web Dashboard can be rendered on the client side, with data supplied by an A
 - Integrate the Web Dashboard into anything that supports HTTP requests (e.g., websites, web applications). See the following demo for details: [DevExpress Dashboard Demo](https://devexpress.github.io/web-dashboard-demo/)).
 - Use the Web Dashboard with [DevExtreme](https://js.devexpress.com) client-side widgets to create responsive web apps.
 
-> Web Dashboard components are available for both [Angular](https://docs.devexpress.com/Dashboard/400409) and [React](https://docs.devexpress.com/Dashboard/400683), but you can also create a [JavaScript Web Dashboard](https://github.com/devexpress/web-dashboard-demo) application.
-
+Visit our product page for more information about BI Dashboard: [DevExpress Dashboard for .NET, Angular, React, and Vue](https://www.devexpress.com/products/net/dashboard/)
 
 ## Demo Structure
 This demo application uses the following DevExpress npm packages:
@@ -45,10 +44,10 @@ The client part is an Angular application, where the `DxDashboardControlModule` 
   
  ## Documentation
 
-- [Get Started: How to Create a Dashboard Angular Application](https://docs.devexpress.com/Dashboard/400322?v=20.2)
-- [Client-Side Configuration (Angular)](https://docs.devexpress.com/Dashboard/400409?v=20.2)
-- [Server-Side Configuration (ASP.NET Core)](https://docs.devexpress.com/Dashboard/119166?v=20.2)
-- [Server-Side Configuration (ASP.NET MVC)](https://docs.devexpress.com/Dashboard/119500?v=20.2)
+- [Get Started: How to Create a Dashboard Angular Application](https://docs.devexpress.com/Dashboard/400322)
+- [Client-Side Configuration (Angular)](https://docs.devexpress.com/Dashboard/400409)
+- [Server-Side Configuration (ASP.NET Core)](https://docs.devexpress.com/Dashboard/119166)
+- [Server-Side Configuration (ASP.NET MVC)](https://docs.devexpress.com/Dashboard/119500)
 
 ## License
 
